@@ -1,0 +1,10 @@
+https://www.kaggle.com/datasets/maricinnamon/harry-potter-movies-dataset
+github.com/gastonstat/harry-potter-datas
+
+ai:
+做dataset筛选 筛列数 排数这些
+gitignore他写的
+
+
+
+We used the GPT-4o-mini API to generate initial emotion labels for our 600-sample dataset, following the annotation guidelines we developed (see docs/annotation_guidelines.md). We iterated on the prompt across three versions, with manual accuracy checks on a 50-sample validation set at each stage, improving accuracy from 70% to 91%. We then applied the final prompt to all 600 samples and manually reviewed a stratified sample of 100 entries, correcting 13 labels. This semi-automated approach is a practical technique discussed in Lecture 18 (SOTA Models Applications), trading compute cost for annotation speed while maintaining human quality control at key decision points.

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model weights (too large for GitHub)
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+models/*/
+!models/.gitkeep
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# API keys and secrets (never commit these)
+*.key
+secrets.json
+.env.local
+
+# Training artifacts and logs
+wandb/
+runs/
+outputs/
+*.log
+
+# Large datasets (uncomment if needed)
+# movie-dataset/*.csv
