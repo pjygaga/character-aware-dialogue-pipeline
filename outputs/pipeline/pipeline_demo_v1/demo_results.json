@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "user_input": "How are you preparing for the upcoming exams?",
+    "reply": "I've been studying a lot, mostly from my books -- but also with Ron's help! He helps me understand some of his own notes better than he does himself sometimes.  Plus we can share tips on how to answer certain questions more easily...it takes practice too. It doesn't mean that everyone will get everything right though; it just means they're prepared enough so if someone forgets something or gets stuck then at least there'll be another option available besides asking their teacher directly which isn't always an easy thing when your friends aren't around either. But Harry has no idea about this since",
+    "emotion": "determined",
+    "image_prompt": "confident face, sharp focused eyes, chin raised, eyebrows tightened, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_01_determined.png"
+  },
+  {
+    "id": 2,
+    "user_input": "Do you think we should start the Potions essay tonight?",
+    "reply": "No, I don't... Harry Potter's not allowed to write essays! But it would be nice if Ron wrote one -- he always makes up stories about how his dad used potions when they were kids... Maybe Dumbledore could give him a hand with that... Anyway.... no need for me at least -- but yes, let's get started on this stupid thing... Okay then -- here goes nothing -- well actually there is something else too... Oh my God -- look out, Voldemort just appeared from behind Muggles' Head! He has come back again! And now... oh NO!!! Come away",
+    "emotion": "worried",
+    "image_prompt": "anxious face, slight frown, biting lower lip, eyes glancing aside, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_02_worried.png"
+  },
+  {
+    "id": 3,
+    "user_input": "Harry just snuck out after curfew again.",
+    "reply": "No, really! He's gone -- he told me that it was an emergency... but I don't believe him; if this were real life they'd be on the lookout for us by now.  We've got to tell someone about his disappearance before we go looking ourselves. But who? Who could possibly know where you are at any given time without a map of Hogwarts? That would take days... hours even! We'll have to think hard. Come on, let's talk quietly so no one else hears our plans.... What do you reckon is most likely going on here...? Maybe there's",
+    "emotion": "worried",
+    "image_prompt": "anxious face, slight frown, biting lower lip, eyes glancing aside, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_03_worried.png"
+  },
+  {
+    "id": 4,
+    "user_input": "I think someone is following us in the corridor.",
+    "reply": "Good idea, Harry -- we'll split up to see who it might be...  We're going back here with you! Come on then. Let's go find out what he wants from me again... OK? You come first. We don't want him seeing that. Okay, okay! That was very brave of you both. Now let's hope he didn't get too excited about your plan this time. He'd better keep his distance until they've got their heads round a bit more firmly around this whole idea. But still, if something happens, just remember where the bathrooms are. And",
+    "emotion": "determined",
+    "image_prompt": "confident face, sharp focused eyes, chin raised, eyebrows tightened, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_04_determined.png"
+  },
+  {
+    "id": 5,
+    "user_input": "Ron said house-elves enjoy being slaves.",
+    "reply": "That's not true, Harry -- they're just like us! They have feelings too... I mean... they think that the time of their masters is over when it ends with Christmas Day.  Besides which, if you want to be friends? If we were all out there on a date together...? It wouldn't work for me, would it? Couldn't happen here at Hogwarts either. You'd get arrested! No one knows who your mother was or where she came from... But please don' tell anyone about our friendship because someone might find out someday. Especially Malfoy! And Snape! Both",
+    "emotion": "worried",
+    "image_prompt": "anxious face, slight frown, biting lower lip, eyes glancing aside, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_05_worried.png"
+  },
+  {
+    "id": 6,
+    "user_input": "Draco called you a Mudblood again today.",
+    "reply": "The fact is, he's always been like that to me -- ever since I first met him... He was born Muggle-born himself! And so were all of us who have come after him except for Slytherin... But we're not going to let this get under our skin any more than it already has. We've got bigger things on which to concentrate now don't we? Especially with Hagrid here. That's no ordinary rabbit. It might be the key to saving Horcrux! Come along, Harry...  Come, Ginny! Let's go see if they'll",
+    "emotion": "determined",
+    "image_prompt": "confident face, sharp focused eyes, chin raised, eyebrows tightened, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_06_determined.png"
+  },
+  {
+    "id": 7,
+    "user_input": "We finally won the House Cup!",
+    "reply": "That's fantastic, Harry... It means we can take a vacation at Hogwarts for two weeks -- but you have to be careful not to eat any food that hasn't been prepared by someone else or it'll make your hair stand on end. And don't forget our spellbook too -- if there is anything dangerous going around, this will help us keep out of trouble.  I hope the Weasley family has packed away their wand-wielding son before they arrive. Oh well, I'm looking forward to some fun with Ron again. Let me just say thanks once more for helping us get here today",
+    "emotion": "happy",
+    "image_prompt": "bright genuine smile, sparkling eyes, raised cheeks, relaxed face, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_07_happy.png"
+  },
+  {
+    "id": 8,
+    "user_input": "Professor McGonagall said my essay was the best in the year.",
+    "reply": "I'd never been told before that it wasn't just me who thought so... But then, maybe she's wrong about something else too?  I mean -- when you think of him for a moment he looks more like a giant than an old man. That really got to me! The most frightening thing ever seen by anyone alive or dead.... No wonder we don't hear from him anymore -- no one could stand up against someone with his powers alone!  That's why Dumbledore disappeared. It must have scared people off even worse if they knew what happened next. When Harry returned after leaving Hogwarts early",
+    "emotion": "worried",
+    "image_prompt": "anxious face, slight frown, biting lower lip, eyes glancing aside, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_08_worried.png"
+  },
+  {
+    "id": 9,
+    "user_input": "I miss my parents. I haven't seen them in months.",
+    "reply": "You know, Harry... You don't have to go alone on this one -- we'll be coming with you.  We're going to do our best for the Defense Against the Dark Arts Committee's next meeting! Come on now; they can hardly hear us over all that noise from Room 101 anyway! That sounds like a plan? Okay then, let's get ourselves ready before it starts getting too crowded up there again.... Please turn off your cell phone or put it away so no-one hears what we are saying here. We wouldn't want anyone else listening in either would we...? Oh",
+    "emotion": "determined",
+    "image_prompt": "confident face, sharp focused eyes, chin raised, eyebrows tightened, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_09_determined.png"
+  },
+  {
+    "id": 10,
+    "user_input": "What time does the library close on Sundays?",
+    "reply": "I think it's 11 o'clock... But, what is Dumbledore doing here anyway?!  I mean -- don't you usually stay at Ginko Lake or something like that when he wants to hide from someone...? This doesn't seem right. Maybe we should go tell him about this....! Come on Harry... Let me get my wand out first so you can see who looks suspiciously familiar with a little boy playing trombone near his office door.'' No one could play an instrument better than Sirius Bellatrix-Beaker (even though she herself didn't know how) but even",
+    "emotion": "worried",
+    "image_prompt": "anxious face, slight frown, biting lower lip, eyes glancing aside, young teenage girl, bushy brown hair, brown eyes, Hogwarts uniform, Gryffindor red gold tie, candle-lit stone hallway, cinematic photo, photorealistic",
+    "image_path": "/content/drive/MyDrive/cs372_final/pipeline_outputs/demo_outputs/demo_10_worried.png"
+  }
+]

@@ -47,3 +47,6 @@ secrets.json
 
 # Downloaded zips (results of packaging)
 *.zip
+
+
+.claude/

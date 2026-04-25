@@ -200,3 +200,107 @@ test for the emotion classifier — the v1 classifier (trained on original
 movie dialogue) is expected to underperform on LoRA-generated text, and 
 augmenting v3's training set with these 100 labeled samples should improve 
 performance on this distribution.
+
+
+阶段4导入文件部分的函数用了ai
+Quick sanity check: compare with v1 predictions to compute "agreement" 用了ai
+def plot_training_curves(version_names):用了ai
+
+
+at phase 4 Even with fixed random seed, run-to-run variance was ~0.03 macro-F1, suggesting the model is sensitive to initialization on this small dataset. Multiple runs and averaging would give more reliable estimates.
+
+早停在两个崩盘run里都触发了
+仔细看：
+dropout实际跑了几个epoch早停触发？0.18/8（跑满）没触发，还在改善0.25/8就停了触发了，val F1连续2轮下降0.34/8就停了触发了，val F1崩了
+
+第一部分：基本设置写什么：模型选了什么、为什么、数据集多大、有什么特点。可用的事实：
+选 bert-base-uncased，因为这是Lecture 10里讲过的标准微调起点，且参数量适中（4090或Colab T4都能跑）
+训练集478条、验证集58条、测试集64条——用80/10/10分层抽样
+6类情绪：determined, worried, angry, happy, sad, neutral
+类别非常不平衡：neutral 184条 vs sad 13条（差14倍）
+应对策略：class-weighted cross-entropy，权重和类别频率成反比（neutral权重0.49，sad权重6.02）
+可以加一句的反思：sad只有13条，无论怎么调都难训——这个局限性要承认。第二部分：v1（第一次训练）写什么：用什么数据、训练完什么效果、暴露了什么问题。可用的事实：
+用478条原作台词训练
+超参数：lr=2e-5，batch_size=16，dropout=0.1，weight_decay=0.01，warmup=10%，最多8 epochs
+用val macro F1做early stopping，patience=2
+v1结果：accuracy 0.50，macro F1 0.410，weighted F1 0.484
+各类F1：neutral 0.760, happy 0.667, angry 0.400, determined 0.381, worried 0.250, sad 0.000
+可以观察的现象：
+
+v1对多数类（neutral）表现很好（F1=0.76），少数类（sad）完全失败（F1=0）
+worried虽然训练样本不算少（115条），但F1只有0.25，说明这一类边界不清
+happy只有18条训练数据，但因为class weighting，F1=0.667比预期高
+第三部分：诊断（v1暴露了什么）写什么：让v1去预测100条LoRA文本，看它的反应。可用的事实：
+100条LoRA生成文本（API标注的"真值"分布）：worried 41, determined 26, neutral 13, happy 12, angry 5, sad 3
+v1对这100条的预测分布：worried 49, determined 24, angry 10, happy 10, neutral 6, sad 1
+v1的预测平均置信度只有0.375（6类随机猜是0.167，所以高于随机但远谈不上自信）
+v1与API标签一致率65%（也就是100条里35条判错）
+关键观察：
+
+v1过度预测worried（49 vs 真值41）和过度预测angry（10 vs 真值5）
+v1漏掉了一半neutral（预测6 vs 真值13）
+v1几乎没识别出sad（只判出1条 vs 真值3条）
+低置信度案例的例子（你贴过的）：
+
+"I'm sorry, I just wanted to see them up close..." 判sad p=0.22
+"You did it? You killed your own father!" 判angry p=0.24
+这些案例说明v1对LoRA生成的文本"语感不熟"。第四部分：v2（第二次训练）写什么：怎么改进、为什么改、效果如何。可用的事实：
+把100条LoRA文本（带API情绪标签）加进训练集，变成578条
+重新计算class weights（因为分布变了一些）
+其他超参数和v1完全一样——这样任何提升都来自数据，不是参数变化
+v2结果：accuracy 0.547，macro F1 0.453，weighted F1 0.546
+各类F1的变化（这是最有说服力的部分）：类别v1v2变化worried0.2500.500+0.250（最大提升）angry0.4000.500+0.100determined0.3810.421+0.040sad0.0000.0000（依然失败）neutral0.7600.727-0.033（略降）happy0.6670.571-0.096（略降但样本太少）可以解释的因果关系：
+
+LoRA增强数据里worried有41条，最多——v2 worried提升+25个点最大
+LoRA数据里sad只有3条——v2 sad依然是0
+所以"哪一类的增强数据多 → 哪一类提升大"，关系很清楚
+可以反思的点：
+
+happy和neutral略降可能是噪声（这两类增强数据较少）
+也可能是因为classifier head随机初始化的run-to-run variance（约0.03）
+多跑几次取平均才更可靠，但时间不够
+第五部分：调参实验（dropout）写什么：试了几个dropout，哪个最好，发现了什么有趣的现象。可用的事实：
+用augmented数据集试了 dropout = {0.1, 0.2, 0.3}
+其他超参数不变
+dropoutmacro F1状态0.10.424最好0.20.315提前early stop（5/8 epoch）0.30.128严重崩盘（4/8 epoch停）dropout=0.3的崩盘细节（值得讲）：
+
+模型几乎把所有东西都判成worried
+determined、happy、sad三类F1都是0
+neutral 23条只对3条
+这就是Lecture 05讲的"dropout过强导致underfit"
+可以提的reasoning：
+
+数据集只有578条，每epoch只有约36个batch
+dropout=0.3意味着每次30%神经元被屏蔽，noise太大
+早停机制成功识别了崩盘并提前终止了训练
+dropout=0.1和单独的v2虽然都是dropout=0.1但F1不同（0.424 vs 0.453）的解释：
+
+这是run-to-run variance
+即使seed固定，HuggingFace Trainer的某些随机性没被完全控制
+0.03的波动在小数据集小模型上是正常的
+第六部分：最终模型选择和局限性写什么：选了哪个模型当最终版、有什么没解决的问题。可用的事实：
+最终模型选 v2（dropout=0.1，augmented data，macro F1 = 0.453）
+调参实验确认了dropout=0.1是合理选择
+诚实交代的局限性：
+sad类彻底失败：训练集只有13条，class weighting把单条sad的惩罚放大了6倍仍学不到稳定特征——本质是数据问题，不是模型问题
+happy/sad测试集太小：分别只有3条，单条对错决定整类F1，统计意义有限
+没做cross-validation：时间不够，单次train/test split可能有方差
+API标签也不是gold standard：API标的100条本身可能有错，但和stage 1保持一致是为了标注一致性
+run variance：相同设置不同run F1差0.03，说明结果应该被理解为"某个范围"而不是某个精确值
+把这些素材组织成日志的建议结构上不要分"v1 / v2 / hyperparam"三段平铺，那样太流水账。建议这样讲故事：
+背景（1段）：什么任务、为什么是难的（数据少、不平衡）、对策是什么
+第一次尝试（1-2段）：v1长什么样、表现如何
+发现问题（1段）：诊断的100条数据告诉了我们什么
+第二次尝试（1-2段）：v2怎么改、效果如何、最大的提升在哪
+调参验证（1段）：dropout三个值、为什么0.3崩了、印证了什么
+没解决的事（1段）：sad、small test set、variance
+
+
+
+
+in 03 pipeline
+load trained lora and bert model 用了ai
+!pip install -q compel compel包是ai教的
+
+
+SD 1.5 在小脸构图下面部细节不稳定。我们尝试了 5 版 prompt 调整：v1 缺乏情绪区分；v2 简化 prompt 后情绪表达太弱；v3 加入肖像构图改善画质但情绪仍模糊；v4 用 Compel 权重语法 (++)+++ 强化情绪后表情清晰但身份漂移（人种、年龄、发型不一致）；v5 给身份特征同样加权后达到平衡，但仍有微妙的"诡异感"。这反映了 SD 1.5 在小模型容量下情绪与身份特征的注意力竞争。未来工作可以换用 SDXL 或加 face restoration 后处理。
