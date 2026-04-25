@@ -1,0 +1,47 @@
+# Dependencies for the character-aware dialogue pipeline.
+#
+# This project was developed across four Google Colab notebooks
+# (notebooks/00_..03_*.ipynb). The notebooks install dependencies
+# in-cell. This file consolidates those installs for local reproduction.
+#
+# Versioning policy:
+#   - Pinned: explicitly version-locked in a notebook (notebook 02
+#     classifier training). These pins matter for reproducibility.
+#   - Unpinned: notebooks installed with `pip install -U <pkg>` on
+#     Colab, so the actual versions floated to whatever was current
+#     in April 2026. Pinning here would invent precision we don't have.
+#
+# To reproduce the exact LoRA / pipeline environment, mirror Colab
+# defaults (Python 3.12, CUDA 12.x) or pip-freeze the original Colab
+# session.
+
+# --- Pinned (notebook 02 — emotion classifier) ---
+transformers==4.44.2
+datasets==2.21.0
+accelerate==0.34.2
+scikit-learn==1.5.1
+evaluate==0.4.2
+
+# --- Unpinned: LoRA fine-tuning (notebook 01) ---
+peft
+bitsandbytes
+trl
+openai
+
+# --- Unpinned: Stable Diffusion pipeline (notebooks 00, 03) ---
+diffusers
+safetensors
+compel
+sentence-transformers
+
+# --- Core scientific stack (Colab pre-installed; required locally) ---
+torch
+numpy
+pandas
+matplotlib
+seaborn
+Pillow
+tqdm
+
+# --- Notebook runtime ---
+jupyter
