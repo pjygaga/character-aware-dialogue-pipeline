@@ -138,65 +138,7 @@ To assess the generalization gap between the original Hermione dialogue and the 
 
 ### Stage 4 — Classifier iteration story (v1 → v2 → dropout sweep)
 
-**Setup**:
-- Backbone: `bert-base-uncased` (Lecture 10 standard fine-tuning starting point; fits in T4/4090 memory).
-- Splits: 80/10/10 stratified — train 478, val 58, test 64.
-- 6 emotion classes, severely imbalanced: neutral 184 vs sad 13 (~14×).
-- Loss: class-weighted cross-entropy, weights inversely proportional to class frequency (neutral 0.49, sad 6.02).
-- Acknowledged limitation: sad has only 13 training samples; no amount of weighting can fully compensate.
-
-**v1 (478 movie lines)**:
-- Hyperparams: lr=2e-5, batch_size=16, dropout=0.1, weight_decay=0.01, warmup=10%, max 8 epochs.
-- Early stopping on val macro F1, patience=2.
-- Result: accuracy 0.50, macro F1 0.410, weighted F1 0.484.
-- Per-class F1: neutral 0.760, happy 0.667, angry 0.400, determined 0.381, worried 0.250, sad 0.000.
-- Observations: strong on majority class (neutral), complete failure on minority (sad). worried (115 train samples) only F1=0.25 — fuzzy class boundary. happy (18 samples) F1=0.667, helped by class weighting.
-
-**Diagnostic — v1 on 100 LoRA-generated samples**:
-- True label distribution (from API): worried 41, determined 26, neutral 13, happy 12, angry 5, sad 3.
-- v1 predictions: worried 49, determined 24, angry 10, happy 10, neutral 6, sad 1.
-- Mean prediction confidence: 0.375 (random for 6 classes is 0.167).
-- Agreement with API labels: 65%.
-- v1 over-predicts worried (+8) and angry (+5), misses half of neutral (6 vs 13), barely identifies sad (1 vs 3).
-- Low-confidence examples: "I'm sorry, I just wanted to see them up close..." → sad p=0.22; "You did it? You killed your own father!" → angry p=0.24.
-- Conclusion: v1 is unfamiliar with the LoRA-generated text distribution.
-
-**v2 (478 + 100 LoRA-augmented = 578 samples)**:
-- Recomputed class weights for new distribution. All other hyperparams identical to v1 — any improvement attributable to data, not parameters.
-- Result: accuracy 0.547, macro F1 0.453, weighted F1 0.546.
-
-| Class | v1 F1 | v2 F1 | Δ |
-|---|---|---|---|
-| worried | 0.250 | 0.500 | +0.250 |
-| angry | 0.400 | 0.500 | +0.100 |
-| determined | 0.381 | 0.421 | +0.040 |
-| sad | 0.000 | 0.000 | 0 (still 0) |
-| neutral | 0.760 | 0.727 | -0.033 |
-| happy | 0.667 | 0.571 | -0.096 |
-
-- Causal pattern: classes with more augmentation samples improved most. worried got +41 samples → biggest gain. sad got +3 → no change.
-- Slight neutral / happy regression may be noise (run-to-run variance ~0.03) or low-data effect.
-
-**Hyperparameter sweep — dropout ∈ {0.1, 0.2, 0.3}** (augmented dataset):
-
-| dropout | macro F1 | Outcome |
-|---|---|---|
-| 0.1 | 0.424 | Best |
-| 0.2 | 0.315 | Early stop at 5/8 epochs |
-| 0.3 | 0.128 | Severe collapse, stopped at 4/8 |
-
-dropout=0.3 collapse details: model classified almost everything as worried; F1=0 for determined, happy, sad; only 3/23 neutral correct. Textbook Lecture 05 "dropout too strong → underfit" on a 578-sample dataset (~36 batches/epoch). Early stopping correctly identified and halted the failing run.
-
-dropout=0.1 in this sweep (F1=0.424) vs the v2 main run (F1=0.453, also dropout=0.1) — 0.029 difference is within run-to-run variance; HuggingFace Trainer has un-seeded sources of randomness even with seed fixed.
-
-**Final model**: v2, dropout=0.1, augmented data, macro F1 = 0.453.
-
-**Acknowledged limitations**:
-- sad class fundamentally fails (data, not model)
-- happy/sad test sets too small (3 each); single-sample correctness dominates per-class F1
-- No cross-validation (time)
-- API labels are not gold standard, but consistent with Stage 1 annotation
-- Run-to-run variance ~0.03 — results should be read as a range, not a point estimate
+Migrated to [`docs/iteration_log.md`](docs/iteration_log.md#2-classifier-iterations-v1--v2). Includes setup, v1 baseline, the 100-sample LoRA diagnostic, v2 augmented-data results with per-class F1 deltas, the dropout sweep, and acknowledged limitations.
 
 ### Stage 5 — SD prompt iteration (v1 → v5)
 
