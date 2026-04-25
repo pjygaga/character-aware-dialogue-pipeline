@@ -19,18 +19,27 @@ The four notebooks under `notebooks/` are written to run in Colab with a T4 GPU.
    ```
 4. Run cells top to bottom.
 
-<!-- TODO: 如果你的 notebook 依赖某个具体的 Drive 路径或者预下载好的模型,在这里说清楚.
-     例如:
-     - LoRA 训练需要预先把 hermione_dataset_lora.json 放到 /content/drive/MyDrive/cs372/data/
-     - LoRA inference 需要把训练好的 adapter_model 放到 /content/drive/MyDrive/cs372/models/lora_final_model/ -->
+### Required Google Drive layout for notebooks 01 and 03
+
+Notebooks 01 (LoRA training + checkpoint backup) and 03 (pipeline inference) read and write to fixed Drive paths. Before running, ensure the following layout exists under your Drive:
+
+| Path | Used by | Role |
+|---|---|---|
+| `/content/drive/MyDrive/cs372_final/lora_final_model/adapter/` | notebook 03 (read) | trained LoRA adapter — output of notebook 01 |
+| `/content/drive/MyDrive/cs372_final/classifier_v2_best/` | notebook 03 (read) | trained BERT classifier — output of notebook 02 |
+| `/content/drive/MyDrive/cs372_final/pipeline_outputs/` | notebook 03 (write) | demo image + JSON output destination |
+| `/content/drive/MyDrive/cs372_final/` | notebook 03 (read) | also serves as `IMAGE_PROMPTS_DIR` for the Stage 5 prompt builder |
+| `/content/drive/MyDrive/hermione_project_backups/phase3_4/` | notebook 01 (write) | mid-training checkpoint backup |
+
+To use a different layout, edit the path constants near the top of each notebook (`LORA_MODEL_PATH`, `CLASSIFIER_PATH`, `OUTPUT_DIR`, `IMAGE_PROMPTS_DIR`, `DRIVE_BASE`).
 
 ## Option B — Local installation
 
 ### Prerequisites
-- **Python**: 3.10–3.12 (project was developed on 3.12)
-- **CUDA**: 12.x with a recent NVIDIA driver if running stages 1–3 on GPU
-- **GPU memory**: ≥ 10 GB (RTX 3060 / 4060 Ti / Colab T4 all work)
-- **Disk**: ~15 GB for cached HuggingFace + SD weights
+- **Python**: 3.12 (the version this project was developed and tested on; older 3.10/3.11 may work but were not validated).
+- **CUDA**: 12.x with a recent NVIDIA driver if running stages 1–3 on GPU.
+- **GPU memory**: ≥ 10 GB (RTX 3060 / 4060 Ti / Colab T4 all work).
+- **Disk**: ~15 GB for cached HuggingFace + SD weights.
 
 ### Step-by-step
 
@@ -61,14 +70,6 @@ jupyter notebook
 # then open notebooks/00_..03_*.ipynb
 ```
 
-### Known local-vs-Colab gotchas
-
-<!-- TODO: 如果你跑本地的时候踩了坑,在这里记一下,例如:
-     - bitsandbytes 在 Windows 上需要装预编译 wheel
-     - compel 0.x 和 diffusers 某版本不兼容
-     - peft 加载 LoRA adapter 时如果 transformers 版本不对会 silently 退化
-     如果没踩坑就删掉这一节 -->
-
 ---
 
 ## Pre-trained Artifacts
@@ -77,8 +78,8 @@ The repository **does not** ship trained model weights (too large for git). To r
 
 | Artifact | Where to put it | How to obtain |
 |---|---|---|
-| LoRA adapter for Phi-2 | `outputs/lora/models/lora_final_model/` | <!-- TODO: 上传到 HuggingFace Hub / Drive 然后写下载链接 --> |
-| Fine-tuned BERT classifier | `outputs/classifier/v2/best_model/` | <!-- TODO: 同上 --> |
+| LoRA adapter for Phi-2 | `outputs/lora/models/lora_final_model/` | Trained weights are not redistributed in this repository (data licensing + git LFS budget). To reproduce, run `notebooks/01_hermione_lora_training.ipynb` on a T4 GPU (≈90 minutes). |
+| Fine-tuned BERT classifier | `outputs/classifier/v2/best_model/` | Same constraint as above. To reproduce, run `notebooks/02_hermione_emotion_classifier.ipynb` (≈20 minutes on T4). |
 | Stable Diffusion 1.5 base | auto-downloaded by `diffusers` | no manual step |
 
 To retrain from scratch, run the notebooks in order: 01 → 02. Stage 0 and 3 are inference-only.
