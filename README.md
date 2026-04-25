@@ -2,16 +2,13 @@
 
 > CS372 final project — generates emotion-conditioned, character-styled dialogue and matching Stable Diffusion portraits for Hermione Granger (Harry Potter).
 
-<!-- TODO: replace this one-line description with your final framing if it changes -->
-
 ## What It Does
 
-<!-- TODO: 用 3-5 句话讲清楚 (rubric #112)
-     建议覆盖:
-     - 输入是什么 (用户提问 / 对话上下文)
-     - 中间发生了什么 (LoRA 生成台词 → BERT 分类情绪 → SD 出图)
-     - 输出是什么 (一段 Hermione 风格台词 + 一张匹配情绪的人物肖像)
-     - 它解决了什么问题 / 比裸 SD 或裸 LLM 好在哪 -->
+This project builds a three-model pipeline that produces in-character Hermione Granger dialogue with matching emotional portraits. A user query enters the pipeline, a LoRA-fine-tuned Phi-2 generates a response in Hermione's style, a BERT classifier labels the emotion of that response, and a Stable Diffusion 1.5 model conditioned on that emotion produces a portrait of the character delivering the line.
+
+Off-the-shelf LLMs answer in a generic assistant voice, and off-the-shelf text-to-image models produce visually inconsistent characters. The pipeline addresses both: parameter-efficient fine-tuning shifts the LLM from assistant-voice to Hermione-voice (rubric items #42, #45, #46), and emotion-derived prompt conditioning grounds the SD output in the actual content of the generated text rather than a static character template.
+
+Character-grounded multimodal generation is an active research area: Chen et al. (2023) "Large Language Models Meet Harry Potter: A Bilingual Dataset for Aligning Dialogue Agents with Characters" explores LLM character alignment, and the broader role-playing LLM literature (e.g., Wang et al. 2024 on character self-alignment) demonstrates that style-only fine-tuning under-delivers without grounding signals. This pipeline tests one specific grounding signal — emotion classification — on a small, controlled scope.
 
 The pipeline is split into four stages, each implemented in a Colab notebook under `notebooks/`:
 
@@ -22,7 +19,7 @@ The pipeline is split into four stages, each implemented in a Colab notebook und
 | 2 | `02_hermione_emotion_classifier.ipynb` | Train a BERT emotion classifier (6 classes) |
 | 3 | `03_pipeline_integration.ipynb` | End-to-end: text → classifier → emotion-conditioned SD prompt → image |
 
-Source modules under `src/` are extracted utilities; the notebooks are the canonical implementation.
+Reusable utilities (data loading, prompt templates, classifier inference helpers) live in `src/`. The four notebooks orchestrate the pipeline stages end-to-end and produce all artifacts under `outputs/`.
 
 ## Quick Start
 
@@ -46,31 +43,26 @@ For Colab / GPU / model-weight setup see [SETUP.md](SETUP.md).
 
 ## Video Links
 
-<!-- TODO (rubric #114): paste your video URLs here.
-     建议放:
-     - 项目演示视频 (3-5 min, end-to-end demo)
-     - 个人贡献说明视频 (如果是组队作业) -->
+Videos will be added prior to final submission deadline.
 
-- **Demo video**: <!-- TODO: YouTube / Bilibili link -->
-- **Walkthrough video**: <!-- TODO: optional second link -->
+- **Demo video**: _to be added_
+- **Walkthrough video**: _to be added_
 
 ## Evaluation
 
-<!-- TODO (rubric #115): summarize quantitative results.
-     可以从 docs/iteration_log.md 里搬最终数字过来,例如:
+| Component | Metric | Result |
+|---|---|---|
+| Emotion annotation (GPT-4o-mini) | accuracy on 100-sample manual review | 87% → 93% (v1 → v2) |
+| LoRA emotion conditioning | intent–output match rate | 41% (vs 16.7% random baseline) |
+| LoRA style transfer | qualitative inspection (30 test questions) | strong on imperative voice, weak on signature phrases — see iteration_log §3 |
+| Emotion classifier | macro F1 on test set | 0.453 (accuracy 0.547, weighted F1 0.546) |
+| Pipeline factual reliability | hallucination rate (30 LoRA responses) | ~50% contained at least one factual deviation |
 
-     | Component | Metric | Score |
-     |---|---|---|
-     | Emotion classifier (final) | macro F1 (test) | 0.453 |
-     | LoRA emotion control | intent–output match | 41% (vs 16.7% random) |
-     | LoRA style transfer | qualitative — see Phase 3.4 in iteration_log | — |
-     | SD pipeline | qualitative — see archive/demo_outputs_full/ | — |
+Evaluation methodology. The classifier is evaluated on a held-out 10% test split (stratified by emotion class). LoRA emotion control is evaluated by re-classifying 100 LoRA-generated samples with the same GPT-4o-mini annotator used for the training labels — this measures whether the conditioning intent survived generation. Style-transfer and factual reliability are assessed qualitatively on a fixed 30-question test set covering academic, conflict, and moral-dilemma scenarios.
 
-     另外加 1-2 段说明:
-     - 评估方法 (test split / API re-labeling / human inspection)
-     - 已知 limitation (sad 类样本少, SD 1.5 身份漂移等) -->
+Known limitations. The "sad" emotion class has only 17 samples in the source dialogue (Hermione is a resilient character), leaving 1 sample in val and 3 in test — per-class metrics for sad are not statistically meaningful. The Stable Diffusion 1.5 base model exhibits mild identity drift on emotion-weighted prompts; iteration history of the prompt design is preserved in [`docs/iteration_log.md`](docs/iteration_log.md) §4.
 
-Detailed iteration analysis (per-class F1, distribution-shift findings, hyperparameter sweep) is in [docs/iteration_log.md](docs/iteration_log.md).
+Detailed iteration analysis (per-class F1, distribution-shift findings, hyperparameter sweep, classifier v1→v2 improvement deltas) is in [`docs/iteration_log.md`](docs/iteration_log.md).
 
 Demo outputs: see `outputs/pipeline/pipeline_demo_v1/` for representative images. Full 16-image demo set is preserved in `archive/demo_outputs_full/`.
 
