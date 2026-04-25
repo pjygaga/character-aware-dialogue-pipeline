@@ -1,0 +1,17 @@
+=== dropout_0.3 Test Results ===
+Accuracy:    0.2656
+Macro F1:    0.1283
+Weighted F1: 0.1890
+
+              precision    recall  f1-score   support
+
+  determined      0.000     0.000     0.000        13
+     worried      0.255     0.867     0.394        15
+       angry      0.167     0.143     0.154         7
+       happy      0.000     0.000     0.000         3
+         sad      0.000     0.000     0.000         3
+     neutral      0.750     0.130     0.222        23
+
+    accuracy                          0.266        64
+   macro avg      0.195     0.190     0.128        64
+weighted avg      0.348     0.266     0.189        64

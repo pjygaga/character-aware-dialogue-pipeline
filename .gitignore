@@ -6,37 +6,44 @@ __pycache__/
 venv/
 env/
 .env
+.env.local
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Model weights (too large for GitHub)
+# Model weights and training checkpoints (too large for GitHub)
 *.pt
 *.pth
 *.bin
 *.safetensors
 *.ckpt
-models/*/
-!models/.gitkeep
+**/best_model/
+**/checkpoints/
+**/lora_final_model/
+**/adapter_model/
+outputs/lora/models/
+outputs/classifier/v1/
+outputs/classifier/v2/
+outputs/classifier/dropout_*/
 
-# Windows system files
-Thumbs.db
-Desktop.ini
+# Training artifact logs (keep summary CSVs/PNGs but skip raw logs)
+wandb/
+runs/
+**/logs/
+*.log
 
 # IDE
 .vscode/
 .idea/
 
-# API keys and secrets (never commit these)
+# Windows / macOS system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# API keys and secrets
 *.key
 secrets.json
-.env.local
 
-# Training artifacts and logs
-wandb/
-runs/
-outputs/
-*.log
-
-# Large datasets (uncomment if needed)
-# movie-dataset/*.csv
+# Downloaded zips (results of packaging)
+*.zip

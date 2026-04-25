@@ -1,0 +1,2 @@
+Rule-based baseline (always predict 'determined'): 0.2069
+Correct: 12/58

@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "source_emotion": "determined",
+    "context_used": "I will master this spell no matter how long it takes.",
+    "source": "synthetic",
+    "response": "I'm sure you can do that, Harry!  It's not hard once the steps are memorized -- just like everything else we've learned at Hogwarts...",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 2,
+    "source_emotion": "determined",
+    "context_used": "We have to go after Sirius right now!",
+    "source": "synthetic",
+    "response": "No, we can't do that -- it's too dangerous...  We need a plan first. And you've got your wand on the floor? You're going to grab it before I say anything else?!",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 3,
+    "source_emotion": "determined",
+    "context_used": "This essay deserves more than a perfect O grade.",
+    "source": "synthetic",
+    "response": "It's due tomorrow, Harry! I can't believe you're still working on it -- the night before its deadline...  You'll never make up for lost sleep with all this studying we've been doing lately; don't ruin your summer vacation by trying to cram everything into one week.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 4,
+    "source_emotion": "determined",
+    "context_used": "Reading every chapter before class is not optional.",
+    "source": "synthetic",
+    "response": "I know, I've been trying to read it all night -- but... Harry's gone!  He just left the room without saying a word or even looking at me when he came back from his classes this morning.' And then she pauses for effect.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 5,
+    "source_emotion": "determined",
+    "context_used": "Harry needs to study Defense Against the Dark Arts before the duel.",
+    "source": "synthetic",
+    "response": "I'll take you there, I'm sure of it!  It's not far from here -- we can walk... but if he wants us to go faster then why don't we ride? Come on now, let me show off my new broomstick again for a change.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 6,
+    "source_emotion": "determined",
+    "context_used": "We can solve this without help if we just think clearly.",
+    "source": "synthetic",
+    "response": "I don't know, Harry! It's too dangerous for us to be here alone...  We'd better leave now before someone comes looking for you -- but not yet. I'll stay with the boys while you go off on your own.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 7,
+    "source_emotion": "determined",
+    "context_used": "I'm not letting Snape intimidate any first-year again.",
+    "source": "synthetic",
+    "response": "No, we're all going to stand up for him!  We'll be like Dumbledore's Army...but with a real teacher -- but he'd know how it was done. And there would only ever have been one of us who knew what they were doing.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 8,
+    "source_emotion": "determined",
+    "context_used": "There must be a charm in the library that can fix this.",
+    "source": "synthetic",
+    "response": "I'll go get it, Harry!  But we have to hurry -- Dumbledore's coming back soon.\" And off he goes...and on into the night. The next morning, Ron is still waiting for him outside Hagrid's hut when his friend returns with an empty hand.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 9,
+    "source_emotion": "determined",
+    "context_used": "We're going to find that Horcrux tonight.",
+    "source": "synthetic",
+    "response": "No, we aren't!  We've got a plan -- it's called the Patronus Charm... It'll protect us from Dementors while we search for Voldemort himself.\" Harry was right about something.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 10,
+    "source_emotion": "determined",
+    "context_used": "I refuse to fail this Transfiguration test.",
+    "source": "synthetic",
+    "response": "I'm not going, either -- it's too dangerous!  You're only fooling yourself if you think that you can conjure a real creature out of thin air... You'll just end up with something ugly or disgusting like the one we saw at Malfoy Manor last year.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 11,
+    "source_emotion": "determined",
+    "context_used": "Ron, you need to practice that levitation spell properly.",
+    "source": "synthetic",
+    "response": "I know what I'm doing!  It's all about the angle of your wand -- it has to be just right... You see? It makes a perfect circle when we do this on our desks at school.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 12,
+    "source_emotion": "determined",
+    "context_used": "Standing up to Umbridge is the right thing to do.",
+    "source": "synthetic",
+    "response": "And what's wrong with you? Why don't we just go, Harry?\"  Harry looked at me -- he was looking for an answer that I couldn't give him... But then again it wasn't my place either.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 13,
+    "source_emotion": "determined",
+    "context_used": "I'm going to organize a defense club whether the Ministry likes it or not.",
+    "source": "synthetic",
+    "response": "I think we should name our Defense Club, Dumbledore's Army!  It'll be just like when Harry was at Hogwarts...'Dumbledore is coming!' -- And then he'd come running up with his wand....\"Harry Potter,\" you know? It would make perfect sense for us all here.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 14,
+    "source_emotion": "determined",
+    "context_used": "We have to brew the Polyjuice Potion correctly this time.",
+    "source": "synthetic",
+    "response": "I think we've got it, Harry! The potion's ready for use...it has been prepared according to the directions from Professor McGonagall on page 6 of the book -- but I don't know if that means anything at all when you're dealing with a Slytherin like Snape who knows",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 15,
+    "source_emotion": "determined",
+    "context_used": "I'll spend every weekend in the library if that's what it takes.",
+    "source": "synthetic",
+    "response": "I think you've got to be careful, Harry.  We don't want anyone else finding out about this... The Ministry of Magic is very interested in anything related to Voldemort -- especially any information on his whereabouts or plans for revenge against Dumbledore!",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 16,
+    "source_emotion": "determined",
+    "context_used": "Free the house-elves, every single one of them.",
+    "source": "synthetic",
+    "response": "We're going to do it ourselves!  And we'll make sure they all come out alive this time...and that's just for starters -- there are plenty more things you could be doing with your life than being a kitchen maid or an office boy.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 17,
+    "source_emotion": "determined",
+    "context_used": "I'll prove that Crookshanks is innocent.",
+    "source": "synthetic",
+    "response": "I know, Hagrid! We have to go see him -- he's sick with something...it looks like scarlet fever or measles but it won't be long before we find out what exactly has happened when Dumbledore summons us again tomorrow morning at the Half-Blood Prince's room on Slytherin",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 18,
+    "source_emotion": "determined",
+    "context_used": "We must finish this map before Filch catches us.",
+    "source": "synthetic",
+    "response": "We'll be gone soon enough, I promise!  I've got to go get a book on how to make potions... it's due tomorrow -- but we're almost done here anyway. So let me just quickly look up the spell for conjuring an invisibility cloak... okay? Okay then.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 19,
+    "source_emotion": "determined",
+    "context_used": "Every spell in this book has to be memorized by Friday.",
+    "source": "synthetic",
+    "response": "That's right, Harry! We've got a lot of work ahead of us -- we're going to need all the help that you can give me with your memory skills...  And I'm sure it'll come back when needed at exactly the moment we want it most.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 20,
+    "source_emotion": "determined",
+    "context_used": "I'm not leaving until I find the answer.",
+    "source": "synthetic",
+    "response": "And you're going to get it, aren't ya?  You've got a knack for this kind of thing! Come on -- let's go...it'll be over before we know what hit us!''.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 21,
+    "source_emotion": "worried",
+    "context_used": "Harry hasn't returned from the Forbidden Forest yet.",
+    "source": "synthetic",
+    "response": "I hope he's okay, Hagrid said something about him being taken by a Dementor...  But Dumbledore told me it was only an illusion -- like when Snape turned into a snake! I don't believe that anymore either.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 22,
+    "source_emotion": "worried",
+    "context_used": "Ron's wand is acting strangely after Lockhart's spell.",
+    "source": "synthetic",
+    "response": "I think we should go to Hagrid, he knows a lot about wands...but I'm afraid it might be too late now -- the spirit has already taken possession of him!  We'll have to get his help again soon or else they're going to take over all Hogwarts.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 23,
+    "source_emotion": "worried",
+    "context_used": "The Dementors are getting closer to Hogwarts.",
+    "source": "synthetic",
+    "response": "But we can't go out yet, Harry! We have a Defense Against the Dark Arts class with Professor McGonagall this afternoon...  And I'm not sure if she'll let us leave until it's over -- even though we're supposed to be on our way home already.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 24,
+    "source_emotion": "worried",
+    "context_used": "I think someone tampered with my potion.",
+    "source": "synthetic",
+    "response": "I don't know what you're talking about, Harry!  You just drank the one that was meant for Ron's hair... You shouldn't have done it -- it wasn't ready yet.",
+    "predicted_emotion": "angry"
+  },
+  {
+    "id": 25,
+    "source_emotion": "worried",
+    "context_used": "Crookshanks has been missing all night.",
+    "source": "synthetic",
+    "response": "Oh no! He's gone again... I hope he'll be alright, but it will take some time for him to return home -- we can't go looking now until the next day when his parents are back from their holiday vacation.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 26,
+    "source_emotion": "worried",
+    "context_used": "Harry's scar is hurting again.",
+    "source": "synthetic",
+    "response": "You're going to have it checked out, aren't you?  I mean, we've already seen Professor Lupin. He said he could fix the scratch -- but only if Dumbledore came himself! And who'd want that kind of trouble with his head on a platter?!' I think...",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 27,
+    "source_emotion": "worried",
+    "context_used": "What if the troll comes back to the dungeon?",
+    "source": "synthetic",
+    "response": "It won't come, Harry! It's not here anymore...  We've got it all under control now -- we're safe from there again.\"\n\n  Harry Potter has been called one of the greatest characters ever created by an author.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 28,
+    "source_emotion": "worried",
+    "context_used": "Have you seen Neville? He didn't come to Charms.",
+    "source": "synthetic",
+    "response": "No, I haven't -- but he's probably here somewhere...  We can go ask him later if we want! But for now let me see what the Professor wants from us! Come on Harry!",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 29,
+    "source_emotion": "worried",
+    "context_used": "I haven't finished my Arithmancy homework and class is in an hour.",
+    "source": "synthetic",
+    "response": "Don't worry, we'll finish it together!  It's not that hard -- all you have to do...is take the two numbers they gave us for Harry Potter's age plus one year....'And then add three years.' Then divide by seven days a week times 52 weeks per year...",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 30,
+    "source_emotion": "worried",
+    "context_used": "Do you think the basilisk is still in the school?",
+    "source": "synthetic",
+    "response": "No, I don't believe it's there anymore... But we can never be too sure!  We must always keep an eye out for any sign of its presence -- even if that means sleeping with our eyes open all night long. The Basilisks are a very dangerous creature indeed.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 31,
+    "source_emotion": "worried",
+    "context_used": "What if my parents never remember me?",
+    "source": "synthetic",
+    "response": "I don't think they'll forget you, Harry! They're going to be here soon --  and I'm sure Ron's mum will come too... You know who else is coming...",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 32,
+    "source_emotion": "worried",
+    "context_used": "I lost my notes for the Astronomy exam.",
+    "source": "synthetic",
+    "response": "Don't worry, Harry! You're going to ace it anyway...  I mean you've got aced everything else so far -- except that one test where Draco Malfoy tried to shoot you with his wand!",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 33,
+    "source_emotion": "worried",
+    "context_used": "Hagrid hasn't shown up for class today.",
+    "source": "synthetic",
+    "response": "He's sick, I think he has been since last night!  I don't know what to do -- the teacher is going crazy trying to keep us calm... it seems like everyone here knows something about him but no one will tell me anything....",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 34,
+    "source_emotion": "worried",
+    "context_used": "Harry, I think we're being followed.",
+    "source": "synthetic",
+    "response": "No way!  We've got to be careful...but who's following us?  Who could it possibly be?!' -- Ron Weasley -- We'll have a look at the back of their robes when they leave you know.' It will help if you can see them clearly.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 35,
+    "source_emotion": "worried",
+    "context_used": "What if Dumbledore is actually wrong about this?",
+    "source": "synthetic",
+    "response": "It's the only way we'll find out, Harry! We've got to go there -- now!  We can't be late for our lesson with Professor McGonagall...and she won't believe us unless we're both here at once.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 36,
+    "source_emotion": "worried",
+    "context_used": "The Time-Turner is acting strange.",
+    "source": "synthetic",
+    "response": "He's not supposed to be turning back time, Harry! He said it wouldn't happen again...'It wasn't meant for us.'  But he did turn the clock around twice -- once when we were sleeping last night on Dumbledore's office floor at Hogwarts.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 37,
+    "source_emotion": "worried",
+    "context_used": "Ron's broken arm looks worse than yesterday.",
+    "source": "synthetic",
+    "response": "It will be fine, Harry! I'm sure the doctor knows what he's doing...  He'll fix it up soon enough -- no time to worry about that now! Come on -- we've got a lot of work ahead of us before tomorrow begins.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 38,
+    "source_emotion": "worried",
+    "context_used": "I think someone read my diary.",
+    "source": "synthetic",
+    "response": "Harry, don't worry about it! It's just a book of spells...  And you're not going to be reading any more diaries after this year is over -- we've got too much homework already for the next term....'It was written by me,' said Harry.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 39,
+    "source_emotion": "angry",
+    "context_used": "Malfoy just called me a know-it-all again!",
+    "source": "synthetic",
+    "response": "You're not going to take it, are you?  The only way out of here is through the Chamber of Secrets -- but there's no one who knows how to get inside that room other than Harry Potter himself...",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 40,
+    "source_emotion": "angry",
+    "context_used": "Ron, you forgot the Polyjuice Potion ingredients!",
+    "source": "synthetic",
+    "response": "I thought it was just a bit of hair gel...  But I guess we'll have to make do with what's here.\" --Ron Weasley is seen holding up some black liquid that resembles toothpaste or shampoo (possibly polyurethane).",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 41,
+    "source_emotion": "angry",
+    "context_used": "Skeeter's article is full of lies!",
+    "source": "synthetic",
+    "response": "What are you talking about? It says right here...  Skeeter has been a liar since he was five years old -- it doesn't matter how many times his mother told him to tell the truth, or what she did when they found out that he'd lied again....",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 42,
+    "source_emotion": "angry",
+    "context_used": "How could you not finish your Charms homework?",
+    "source": "synthetic",
+    "response": "I was too busy reading the latest Harry Potter book!  You know, one of those books with Ron Weasley's name on it -- The Orderly Olaf... I mean Ollivander. And Draco Malfoy's name is Dobby Dobbs... or something like that.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 43,
+    "source_emotion": "angry",
+    "context_used": "Snape took ten points just because I knew the answer.",
+    "source": "synthetic",
+    "response": "And what's that supposed to mean?  What are you going on about, Harry Potter? You're not even a Gryffindor! And besides -- we know who he is now; it was Dumbledore all along...",
+    "predicted_emotion": "angry"
+  },
+  {
+    "id": 44,
+    "source_emotion": "angry",
+    "context_used": "You broke my time-turner with your foolishness!",
+    "source": "synthetic",
+    "response": "It's not the end of the world, you know? We'll find another one -- it doesn't take much to replace a Time Turner... or does it?  I mean really, what is this thing anyway?",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 45,
+    "source_emotion": "angry",
+    "context_used": "Filch confiscated my notes for absolutely no reason.",
+    "source": "synthetic",
+    "response": "It's not about you, Harry Potter! It's a class assignment...  And I'm sorry but Ron Weasley is going to be the one taking it -- he did all of your homework last night after we were forced out by Professor Snape. He didn't even give me an explanation why.",
+    "predicted_emotion": "angry"
+  },
+  {
+    "id": 46,
+    "source_emotion": "angry",
+    "context_used": "Cormac McLaggen has been bothering me all week.",
+    "source": "synthetic",
+    "response": "I know, I've tried to tell you about it!  But he's just so charming...and -- well we're not allowed here anymore anyway...it can't be that bad? It couldn't possibly hurt him too much if something happened....",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 47,
+    "source_emotion": "angry",
+    "context_used": "Ron, you'd rather copy my homework than do it yourself?",
+    "source": "synthetic",
+    "response": "I'm sorry I don't know how to fly a broomstick!  But if Harry's not going anywhere... why can we go too? Why are they stopping us from getting on the Hogwarts Express?\" -- Dumbledore said no one should be allowed off until he had been told where his seat was.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 48,
+    "source_emotion": "angry",
+    "context_used": "Umbridge gave me detention for asking a question.",
+    "source": "synthetic",
+    "response": "The teacher's been put on leave, but you'll have to take the exams yourself -- unless Dumbledore gives it up!  I mean... he can't do that either; isn't him? And if Harry does this, then we're all going with Hagrid or something like that.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 49,
+    "source_emotion": "angry",
+    "context_used": "Don't you dare touch my books without asking.",
+    "source": "synthetic",
+    "response": "I'm sorry, I just wanted to see them up close...it's not like they're yours! They belong here with the other Harry Potter novels -- that means something special for me!\"  And he looked at Ron Weasley who was standing behind him laughing hysterically.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 50,
+    "source_emotion": "angry",
+    "context_used": "How could anyone call house-elves happy with their lot?",
+    "source": "synthetic",
+    "response": "It's not the same thing, Harry!  You know that I love you more than anything else -- but it doesn't mean we're perfect for each other... It means they'll be just right someday soon.\"  Harry thought about this a moment before answering. \"Yes,\" he said finally.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 51,
+    "source_emotion": "angry",
+    "context_used": "You let the cat out of the common room again!",
+    "source": "synthetic",
+    "response": "You're not going to tell on me, are you?  That's your secret plan for revenge against Dumbledore...to ruin his life by ruining everyone else's lives too?' But I can't do that either -- it would be cruel beyond belief.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 52,
+    "source_emotion": "angry",
+    "context_used": "Ron, that broom is more important to you than I am?",
+    "source": "synthetic",
+    "response": "I don't care! It's mine... it belongs only to me.  It was given by Dumbledore himself -- not just any old wizard but the most powerful one of all time....'sir.' And he gave this special wand to Harry when they first met him at Hogwarts.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 53,
+    "source_emotion": "angry",
+    "context_used": "Harry, you cannot keep risking your life every term!",
+    "source": "synthetic",
+    "response": "I'm not going to stop trying until I've beaten it. That's all that matters... It doesn't matter if Snape likes me or not -- he'll never know the truth about what happened last year when we were at Hogwarts together.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 54,
+    "source_emotion": "angry",
+    "context_used": "Malfoy bullied a first-year right in front of me.",
+    "source": "synthetic",
+    "response": "You're not going to believe this, but I think it's true -- you've got your eye on the wrong person!  It was actually Draco who stole Gilderoy Lockhart from Slytherin House...",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 55,
+    "source_emotion": "happy",
+    "context_used": "Harry, we won the House Cup!",
+    "source": "synthetic",
+    "response": "We did? We really... I don't know how it happened -- but somehow we've done it again this year.  I mean seriously, isn't that amazing?!' It's like all those years of hard work just paid off!",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 56,
+    "source_emotion": "happy",
+    "context_used": "Hagrid showed me the new baby unicorns.",
+    "source": "synthetic",
+    "response": "The one with you!  I've always wanted a unicorn... I mean, it's just that special to us -- we're best friends after all....'Dangerous,' said Harry Potter on hearing this news from Ron Weasley.",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 57,
+    "source_emotion": "happy",
+    "context_used": "I finally cast the Patronus Charm correctly!",
+    "source": "synthetic",
+    "response": "That's it?  It was so easy, you couldn't have done much better than that... What did your patronus turn out to be this time?' Harry Potter asked his friend Ron Weasley with a grin on his face after seeing him conjure up an image of himself.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 58,
+    "source_emotion": "happy",
+    "context_used": "Mum sent me a new copy of Hogwarts: A History.",
+    "source": "synthetic",
+    "response": "I'm glad you're enjoying it, Harry! I've been reading through the book myself -- but there's so much more to learn than what we already know about Dumbledore...",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 59,
+    "source_emotion": "happy",
+    "context_used": "Today's the trip to Hogsmeade!",
+    "source": "synthetic",
+    "response": "I know, I can't wait for it either... Harry?  You're going with us too aren't you?' said Ron Weasley -- a look of surprise on his face when he saw him. 'No way.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 60,
+    "source_emotion": "happy",
+    "context_used": "Professor McGonagall said my essay was brilliant.",
+    "source": "synthetic",
+    "response": "You're going to be a great teacher one day, Harry!  I'm sure of it...'Hagrid's Basilisk'. I've been looking for this book since we left Hogwarts -- you know how important the basilisks are?",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 61,
+    "source_emotion": "happy",
+    "context_used": "I got a perfect score on my Potions exam!",
+    "source": "synthetic",
+    "response": "I'm so proud of you, Harry -- congratulations!  You're the best wizard we've ever seen...and to be honest with you it's not often that one gets an A+ without cheating or someone looking over your shoulder.",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 62,
+    "source_emotion": "happy",
+    "context_used": "Ron and Harry both passed their Charms test!",
+    "source": "synthetic",
+    "response": "Good job, you two did well too.  You've come a long way since your first days at Hogwarts...and I'm proud of the progress we all made together.\" --Hagrid.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 63,
+    "source_emotion": "happy",
+    "context_used": "Crookshanks finally let me brush him.",
+    "source": "synthetic",
+    "response": "That's right, Harry!  I'm going to be your friend from now on -- no more enemies... No more foes... You'll always have a mate by my side when you need one.\" And then he kissed us both goodnight. It was the best kiss I'd ever had....",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 64,
+    "source_emotion": "happy",
+    "context_used": "S.P.E.W. has its first official member!",
+    "source": "synthetic",
+    "response": "I'm Harry Potter, of course...  But I'd rather not be known for that. It's just too much responsibility -- you know? Besides it makes me feel like a bit of an oddball sometimes.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 65,
+    "source_emotion": "happy",
+    "context_used": "I made the Charms Club president!",
+    "source": "synthetic",
+    "response": "That's great, Ginny -- but you know that means we're going to have more homework than ever before?  The club will be a lot busier now... And who knows what else might happen with Ron becoming President of the Chamber of Secrets?!",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 66,
+    "source_emotion": "happy",
+    "context_used": "We're going to the Yule Ball tonight!",
+    "source": "synthetic",
+    "response": "What's that?  I thought we were just staying here for Christmas holidays... And I don't think Dumbledore would be too pleased about us sneaking out of his office at night, either. You've got a plan -- what is it exactly?\" Harry asked.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 67,
+    "source_emotion": "sad",
+    "context_used": "Crookshanks didn't recognize me when I came back.",
+    "source": "synthetic",
+    "response": "I'm sorry, Harry Potter.  It's not my fault that you're a wizard now -- it was Dumbledore who did this to us! It wasn't his idea... he just had the last laugh with Snape on your birthday...",
+    "predicted_emotion": "angry"
+  },
+  {
+    "id": 68,
+    "source_emotion": "sad",
+    "context_used": "I miss my parents during Christmas at Hogwarts.",
+    "source": "synthetic",
+    "response": "I know, Hagrid says they're coming to visit soon... but we'll be here all week!  And it's not like you can go anywhere else -- the only other place is Deathly Hallows Chamber of Secrets where Voldemort will try again on us both this year...",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 69,
+    "source_emotion": "sad",
+    "context_used": "Dobby's funeral was so quiet.",
+    "source": "synthetic",
+    "response": "It wasn't a real death, you know? He just wanted to go home...to the Chamber of Secrets!  He didn't want anyone else knowing he'd been there. I think it made him feel better -- that nobody knew what had happened.",
+    "predicted_emotion": "sad"
+  },
+  {
+    "id": 70,
+    "source_emotion": "sad",
+    "context_used": "Ron and Lavender are holding hands again.",
+    "source": "synthetic",
+    "response": "It's okay, Harry -- it'll be alright soon enough...  Harry Potter is a wizard! He will come back to life tomorrow morning after he has slept for seven years at the end of his seventh year with Professor McGonagall and we can go home together forever!",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 71,
+    "source_emotion": "sad",
+    "context_used": "The library closed before I could finish my research.",
+    "source": "synthetic",
+    "response": "I know, Harry.  We were supposed to be here all day today! But we're not going anywhere now -- you've got a test tomorrow...and Ron's sick with flu-like symptoms.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 72,
+    "source_emotion": "sad",
+    "context_used": "I had to obliviate my parents.",
+    "source": "synthetic",
+    "response": "You did it? You killed your own father!  How could you do that, Harry Potter? How can we live with ourselves after this...'I love you,' he said -- the last thing they ever heard from him before his death.' We're going on a journey now.",
+    "predicted_emotion": "angry"
+  },
+  {
+    "id": 73,
+    "source_emotion": "sad",
+    "context_used": "Hedwig didn't make it home.",
+    "source": "synthetic",
+    "response": "I'm sorry, Harry. I know you're upset about the death of your parents... But this is worse than that -- something's happened to me too!",
+    "predicted_emotion": "sad"
+  },
+  {
+    "id": 74,
+    "source_emotion": "sad",
+    "context_used": "I haven't heard from Viktor in months.",
+    "source": "synthetic",
+    "response": "Well, he's been busy with his own wizarding business -- selling books... to the Slytherin house at Hogwarts!  He says it was a good idea since they're always on guard against Death Eaters during exams week anyway....",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 75,
+    "source_emotion": "sad",
+    "context_used": "Sometimes I feel like I don't fit in anywhere.",
+    "source": "synthetic",
+    "response": "That's because you do, Harry! You're the only one who can get us out of here...and back to Hogwarts when we need it most -- with a bit more magic than usual. And that makes all the difference for everyone else around us too.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 76,
+    "source_emotion": "sad",
+    "context_used": "Fred is gone, Ron. I'm so sorry.",
+    "source": "synthetic",
+    "response": "It's OK to be upset about it. You can't blame yourself for what happened -- you didn't know that he was going away.  But we do have something else now...",
+    "predicted_emotion": "sad"
+  },
+  {
+    "id": 77,
+    "source_emotion": "neutral",
+    "context_used": "We have Herbology after lunch.",
+    "source": "synthetic",
+    "response": "I think you're going to like it, Harry... It's one of the best classes we've got at Hogwarts!  We learn about all sorts of plants -- from poisonous ones that can kill people right through those which are used for making potions or spells.",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 78,
+    "source_emotion": "neutral",
+    "context_used": "The Quidditch match starts at three.",
+    "source": "synthetic",
+    "response": "I'm not sure I want to go, Harry...  It's too dangerous! There are going to be people who'll try to kill you for wearing the Slytherin scarf -- especially Malfoy-wise. Besides, we're supposed to wear Gryffindor robes today.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 79,
+    "source_emotion": "neutral",
+    "context_used": "I'll be in the library if anyone needs me.",
+    "source": "synthetic",
+    "response": "I think we should go to Hagrid's hut, Harry! It will give us some shelter from this awful weather...and it would also make a great place for Ron Weasley to hide his new wand when he gets home -- that way nobody can find him until after Christmas Day is over.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 80,
+    "source_emotion": "neutral",
+    "context_used": "The Sorting Hat song mentioned house unity again.",
+    "source": "synthetic",
+    "response": "The Order of the Phoenix was founded by Dumbledore's father, Sirius Black... And it stands for courage under fire -- not just against Death Eaters but also against those who would destroy Hogwarts itself!  It means love over hate; loyalty above treachery.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 81,
+    "source_emotion": "neutral",
+    "context_used": "Dinner is almost over in the Great Hall.",
+    "source": "synthetic",
+    "response": "I'm going to go wash my hands now, Harry...  Just one more minute? I want to finish this chapter of my book before we leave.' --Ronald Weasley.  We'll be back soon! Come on Ron! It's just a few minutes!'' --Harry Potter.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 82,
+    "source_emotion": "neutral",
+    "context_used": "Today's Charms class covered Cheering Charms.",
+    "source": "synthetic",
+    "response": "That was the one that made people cheer, wasn't it?  The one you used to make your friends laugh when they were feeling down...'It'll be alright.",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 83,
+    "source_emotion": "neutral",
+    "context_used": "Professor Flitwick canceled office hours.",
+    "source": "synthetic",
+    "response": "We'll have to reschedule, but it's probably best you go now -- the Chamber of Secrets is open again this morning!  You don't want anyone else finding out about your plans for Dumbledore's Army...'Oops.' That was me. I'm sorry. Please forgive us.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 84,
+    "source_emotion": "neutral",
+    "context_used": "The Daily Prophet had three articles about you today.",
+    "source": "synthetic",
+    "response": "Did they?  I wonder what he said... I hope it's not that we've been sleeping together! That would be the worst thing to happen, wouldn't it?!' But Harry didn't seem too worried -- or perhaps just a bit amused by his friend's reaction.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 85,
+    "source_emotion": "neutral",
+    "context_used": "Ron is in detention until six.",
+    "source": "synthetic",
+    "response": "That's a bit too much, isn't it? I mean... we're just kids!  It would be nice if someone were to take us somewhere fun instead of sending them off into the cold night air for hours on end.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 86,
+    "source_emotion": "neutral",
+    "context_used": "Morning rounds end in twenty minutes.",
+    "source": "synthetic",
+    "response": "I think we should be careful, Harry... We don't know what's going on here yet!  It could turn out to just another prank by Malfoy or one of his cronies -- but it also might not....",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 87,
+    "source_emotion": "neutral",
+    "context_used": "Harry, your scar moved on the Marauder's Map.",
+    "source": "synthetic",
+    "response": "Yes it did!  I was trying to get out of here when I heard Snape call me over -- he wanted something from my bag...and then Malfoy took him away.  And now they're gone too....'No one can see us.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 88,
+    "source_emotion": "neutral",
+    "context_used": "There's a new chapter in Hogwarts: A History this edition.",
+    "source": "synthetic",
+    "response": "The next one is on the Chamber of Secrets...  It'll be here soon! I can't wait to read it, but Dumbledore told me not to tell anyone until he gets around to reading it himself -- we have an important meeting coming up later today with Professor McGonagall.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 89,
+    "source_emotion": "neutral",
+    "context_used": "The owl post arrived an hour ago.",
+    "source": "synthetic",
+    "response": "The most important thing is to keep the book safe, Harry -- it's full of dangerous spells!  You can't just leave it lying around like that...'tis too precious.' You'll have a hard time finding another one again if you lose this one.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 90,
+    "source_emotion": "neutral",
+    "context_used": "Madam Pince closed the Restricted Section.",
+    "source": "synthetic",
+    "response": "It's been a long time coming, Harry...  The Ministry of Magic has decided to open it again -- but only under strict supervision! And you're going to be one of those supervisors? No way I'll let that happen without telling Dumbledore first.",
+    "predicted_emotion": "determined"
+  },
+  {
+    "id": 91,
+    "source_emotion": "neutral",
+    "context_used": "Tomorrow's lesson is on Vanishing Spells.",
+    "source": "synthetic",
+    "response": "I'm not sure what you mean by that, Harry.  What kind of spell? I've never heard it mentioned before.\" It was the first time she had seen him upset like this since he'd been sick for a week with Belladonna eye drops at his bedside.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 92,
+    "source_emotion": "neutral",
+    "context_used": "The corridor on the third floor is locked again.",
+    "source": "synthetic",
+    "response": "It's been like that since we got here, Ron!  They don't want you to see it... or anyone else for that matter. It's dangerous -- even deadly -- if someone were caught there alone at night without a wand.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 93,
+    "source_emotion": "neutral",
+    "context_used": "Filch posted new rules on the notice board.",
+    "source": "synthetic",
+    "response": "No one may enter or leave without permission of a teacher, except to go from class to another -- no running! No talking during lessons unless spoken with by an adult; otherwise hushed voices only.  If you have been expelled for breaking any rule please come straight back here immediately.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 94,
+    "source_emotion": "neutral",
+    "context_used": "Ginny is on the Quidditch team this year.",
+    "source": "synthetic",
+    "response": "That's good, Harry! I heard you're going to be a seeker next season?  I hope they'll give it back soon -- I'm sure that would make your life easier...",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 95,
+    "source_emotion": "neutral",
+    "context_used": "The greenhouses got a shipment of new mandrakes.",
+    "source": "synthetic",
+    "response": "And I'm sure you've heard about the latest rumor, right?  It's been going around that Horcruxes have already been found! --and it could be... Harry Potter himself! Who knows what he might do next?!' No one will believe us if we say anything else though....",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 96,
+    "source_emotion": "neutral",
+    "context_used": "Padma sat next to me in Arithmancy today.",
+    "source": "synthetic",
+    "response": "I'm not sure I'd call it a lesson, but we did go over some things -- the basics of divination with Runes...  Padma's been practicing for months now; she told us that once you get good enough at reading them correctly they become like second nature.",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 97,
+    "source_emotion": "neutral",
+    "context_used": "The lesson plan for next week is on the board.",
+    "source": "synthetic",
+    "response": "You're going to be teaching us about... something?  Something we don't know anything about, I hope! What's it called again -- some kind of spell or potion...? No way that could possibly go wrong with you leading a class full of unruly students like yourself.",
+    "predicted_emotion": "worried"
+  },
+  {
+    "id": 98,
+    "source_emotion": "neutral",
+    "context_used": "I finished all the assigned reading this morning.",
+    "source": "synthetic",
+    "response": "I didn't finish it, but you did!  You're such a good student -- that's why we like having you around. You know everything about Harry Potter...",
+    "predicted_emotion": "happy"
+  },
+  {
+    "id": 99,
+    "source_emotion": "neutral",
+    "context_used": "We have a free period before lunch.",
+    "source": "synthetic",
+    "response": "I'm going to the bathroom, Harry. See you later?  We'll be back soon! I've got some homework we need to do...and it's not very exciting -- just simple math problems about angles or something like that...",
+    "predicted_emotion": "neutral"
+  },
+  {
+    "id": 100,
+    "source_emotion": "neutral",
+    "context_used": "I checked out three new books from the library.",
+    "source": "synthetic",
+    "response": "I've been reading a lot of Harry Potter lately, you know?  It's not really my thing -- it doesn't take me anywhere but back to Hogwarts... But there are some great stories here too!  The one about Ginny Weasley is especially good for when your parents aren't home.",
+    "predicted_emotion": "neutral"
+  }
+]

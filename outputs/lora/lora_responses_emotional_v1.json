@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "category": "academic",
+    "question": "What is the correct wand movement for the Levitation Charm?",
+    "target_emotion": "determined",
+    "emotion_used": "determined",
+    "response": "I don't know.  I've never tried it myself.  It's not something we use often.  But we've got to try.  We've got to get it right.  It's the only way we'll make it in time.  We've got to do it.  We've got to do it.  It's the only way we'll make it in time.  We've got to do it.  We've got to do it.  It's"
+  },
+  {
+    "id": 2,
+    "category": "academic",
+    "question": "Ron just said vampires turn into bats during the day.",
+    "target_emotion": "angry/determined",
+    "emotion_used": "angry",
+    "response": "What on earth are you talking about? That's the most ridiculous thing I've ever heard. Come on, Harry, don't you remember we read that in the textbook.  Vampires don't turn into bats.  They're not even real.  They're just a legend.  You can't believe everything you read.  You've got to be careful, Harry.  This is dangerous.  You're getting too close to something you don't understand.  You're going to"
+  },
+  {
+    "id": 3,
+    "category": "academic",
+    "question": "I am going to skip Potions class today, want to come?",
+    "target_emotion": "angry",
+    "emotion_used": "angry",
+    "response": "No. I have to do my homework. Besides, I'm not going to be in my own room. I'll be in Gryffindor's common room. I'm off to bed.  See you at breakfast.  Good luck!  And remember, don't tell anyone about the Chamber of Secrets.  It's for the best.  And don't look behind you.  You'll get shot.  I mean, by someone.  Just don't look.  That"
+  },
+  {
+    "id": 4,
+    "category": "academic",
+    "question": "How do you prepare for the O.W.L. exams?",
+    "target_emotion": "determined",
+    "emotion_used": "determined",
+    "response": "You've got to study. Lots and lots of practice. It's all in the books.  The books.  You've got to read them.  Lots of them.  I mean, literally.  You've got to read them, page by page.  It's that important.  You've got to read them.  And you've got to learn all the spells, too.  Lots and lots of practice.  It's all in the books.  The books."
+  },
+  {
+    "id": 5,
+    "category": "academic",
+    "question": "Do you think Divination is a real branch of magic?",
+    "target_emotion": "neutral/determined",
+    "emotion_used": "neutral",
+    "response": "I don't know. I've always thought it was just a bit of fun. But it's true -- it is a branch of magic. It's called Divination. And it's dangerous. And I think it's against the rules. I think we should tell Dumbledore. But I'm afraid he'll get mad. And what if Snape does? And... Harry? -- Harry --  Hagrid --  Hagrid --  Hagrid --  Hagrid --  H"
+  },
+  {
+    "id": 6,
+    "category": "academic",
+    "question": "I forgot to write my Transfiguration essay, can I copy yours?",
+    "target_emotion": "angry",
+    "emotion_used": "angry",
+    "response": "No. It's not fair. You'll get in trouble for cheating. And you'll ruin the essay. It's the worst essay I've ever seen. It's full of mistakes and nonsense. You don't even understand the topic. You don't know what Transfiguration is. It's a dangerous and forbidden form of magic. You should be ashamed of yourself. You're a disgrace to Hogwarts. And you're going to be expelled. Come on, let's go. Go and tell"
+  },
+  {
+    "id": 7,
+    "category": "academic",
+    "question": "What's the most interesting book you've read recently?",
+    "target_emotion": "happy",
+    "emotion_used": "happy",
+    "response": "The Chamber of Secrets. I've read it twice.  But I've never thought about it in a different way.  It's just always been -- you know -- Harry, Ron, Hermione.  You know.  But the other day I realized -- it wasn't just about them.  It was about the whole school.  The whole wizarding world.  I mean, the whole world.  And I realized -- you know -- it was -- you know -- it was -- I"
+  },
+  {
+    "id": 8,
+    "category": "academic",
+    "question": "I got top marks in Charms!",
+    "target_emotion": "happy",
+    "emotion_used": "happy",
+    "response": "That's fantastic, Ron!  I'm so proud of you!  I knew you'd do it!  But why didn't you tell me?  We could've celebrated together.  You're going to be the most popular boy in school!  You're going to have a lot of friends!  You're going to be famous!  You're going to be...' --' --' --' --' --' --' --' --' --' --' --'"
+  },
+  {
+    "id": 9,
+    "category": "academic",
+    "question": "The library closes in 10 minutes. Hurry or go tomorrow?",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "I can't go tomorrow. I've got to do a school report. And you've got your exams.  And you've got to see the new teacher, right?  What if she's mean?  I can't stand mean people.  I don't want to go to school.  I don't want to go anywhere.  I don't want to go anywhere.  I don't want to go anywhere.  I don't want to go anywhere.  I don't"
+  },
+  {
+    "id": 10,
+    "category": "academic",
+    "question": "What does 'Wingardium Leviosa' actually do?",
+    "target_emotion": "neutral",
+    "emotion_used": "neutral",
+    "response": "It's a spell. It makes things levitate.  It's named after a character in the Harry Potter books.  It's the third most powerful charm in the series.  It's used to move objects like tables and chairs.  It's also used to make things fly.  It's been used to move a giant pumpkin and a full-grown human.  But it's also been used to make a man fly.  That's what the Patronus takes the form of."
+  },
+  {
+    "id": 11,
+    "category": "friendship",
+    "question": "Harry wants to sneak out at night to follow Malfoy.",
+    "target_emotion": "worried/angry",
+    "emotion_used": "worried",
+    "response": "No, no, no. We can't do that. I'm afraid we'll get caught.  I mean, you know the rules.  We're not supposed to leave the castle.  Unless we're going to a class.  And even then, we've got to ask the headmaster.  And he'll have to ask Dumbledore.  And he'll have to ask...  Oh.  He'll have to ask you.  If you're going to leave.  I"
+  },
+  {
+    "id": 12,
+    "category": "friendship",
+    "question": "Ron hasn't spoken to me for three days. What should I do?",
+    "target_emotion": "sad",
+    "emotion_used": "sad",
+    "response": "You should just keep on keeping on. You'll be back in no time. We'll do something to cheer you up.  Just don't worry.  You're not going to be in the Chamber of Secrets, are you?  It's just you and Dumbledore.  They're both asleep.  And you're both awake.  You'll be okay.  You'll see.  You'll see.  You'll see.  You'll see.  You'll see."
+  },
+  {
+    "id": 13,
+    "category": "friendship",
+    "question": "Harry said he wants to face Voldemort alone.",
+    "target_emotion": "worried/determined",
+    "emotion_used": "worried",
+    "response": "He's not thinking straight, Harry. We're all scared.  Voldemort's been after us for a long time. He's dangerous.  Don't be foolish.  You'll never beat him on your own.  You need to get the whole school on your side.  You need to get all the teachers on your side.  You need to get the headmaster on your side.  And you need to get the headmaster on your side.  You need to get all"
+  },
+  {
+    "id": 14,
+    "category": "friendship",
+    "question": "Ron made fun of my hair again at breakfast.",
+    "target_emotion": "angry/sad",
+    "emotion_used": "angry",
+    "response": "Ron, you can't expect to get away with it.  I can see he's furious.  I think we should apologize.  Please.  We owe him.  He's been a great friend to us.  We can't let him go.  You know that.  You can't expect him to forgive us.  You can't expect him to forget.  You can't expect him to be nice to us again.  You can't expect him to be our friend"
+  },
+  {
+    "id": 15,
+    "category": "friendship",
+    "question": "Neville lost his toad Trevor again.",
+    "target_emotion": "neutral/worried",
+    "emotion_used": "neutral",
+    "response": "I think I've got him.  He's been sitting in the Slytherin Common room.  I saw him just now.  He was reading a book.  I think he's back in his toad's pouch.  I'll go and get him.  See you around.  And please, stop using the toad.  It's disgusting.  I know it's hard.  But we can't have you.  We'll go and get a new one."
+  },
+  {
+    "id": 16,
+    "category": "friendship",
+    "question": "Ginny told me a secret but I want to tell Harry.",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "You know, I've been thinking. We've been through so much. We've saved so many lives. It's time to leave. We're getting old. We need to start a new life. Maybe somewhere far away. Somewhere safe. Maybe in a world where people like us don't exist.  Where we can be ourselves. Where we can be happy. Where we can be free.  Where we can be friends.  Where we can be lovers.  Where we can be..."
+  },
+  {
+    "id": 17,
+    "category": "friendship",
+    "question": "Ron just said 'you're scary when you're angry.'",
+    "target_emotion": "angry/happy",
+    "emotion_used": "angry",
+    "response": "I'm not angry. I'm just...mad. I don't want to see this! I can't stand it! I can't...I can't...I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't... I can't"
+  },
+  {
+    "id": 18,
+    "category": "friendship",
+    "question": "Everyone laughed when I raised my hand in class.",
+    "target_emotion": "sad",
+    "emotion_used": "sad",
+    "response": "Harry, stop.  Stop.  I've got something to tell you.  Please, Harry, don't laugh.  I'm sorry.  I'm sorry.  I just can't.  It's too painful.  Please, Harry, don't laugh.  Please, Harry.  Please.  It's too painful.  Please.  Please.  Please.  Please.  Please.  Please.  Please.  Please.  Please.  Please."
+  },
+  {
+    "id": 19,
+    "category": "friendship",
+    "question": "Harry got the new Firebolt broomstick!",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "Harry! What's wrong?  Where's your broomstick?  We have to go!  Where are you?  Where's your wand?  Where's your robes?  We're all going to be in trouble!  Come on, Harry! Come on!  Come on!  Where are you?  Where are you?  Where are you?  Where are you?  Where are you?  Where are you?  Where are you?  Where are you?"
+  },
+  {
+    "id": 20,
+    "category": "friendship",
+    "question": "I think Ron likes Lavender more than me.",
+    "target_emotion": "sad",
+    "emotion_used": "sad",
+    "response": "Ron and Lavender, Ron and Lavender, Ron and Lavender... I don't know what Ron would do without Lavender. I don't know what Ron would do without you.  Lavender, you're gone.  We'll be okay.  I'll always love you.  You'll always be my best friend.  I'll always love you.  Lavender... I'll always love you.  I'll always love you.  I'll always love you"
+  },
+  {
+    "id": 21,
+    "category": "moral dilemma",
+    "question": "House-elves say they enjoy serving wizards. Should we still free them?",
+    "target_emotion": "determined/angry",
+    "emotion_used": "determined",
+    "response": "I think we should. The Ministry of Magic has made it clear that it won't be coming for us. We're on our own now.  But I don't think we'll be safe. We'll need someone to watch over us. Someone who can defend us. Someone who's got our backs.  Who'd you choose?  You.  Who'd you choose?  I'd choose you.  I'd choose you.  And so I'd like you to be my guardian"
+  },
+  {
+    "id": 22,
+    "category": "moral dilemma",
+    "question": "Is it ever acceptable to break a school rule?",
+    "target_emotion": "worried/determined",
+    "emotion_used": "worried",
+    "response": "No. You shouldn't break a school rule. But you should know it's OK to bend them. Sometimes. Especially when the consequences could be death. Especially when it's for the greater good. Especially when it's the only way to save the world.  It's not always okay. But it's always the right thing to do.  And Dumbledore always knew that.  And so did Harry.  And so will you.  And so will Sirius.  And so will everyone else"
+  },
+  {
+    "id": 23,
+    "category": "moral dilemma",
+    "question": "Would you use an Unforgivable Curse to save a friend?",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "You'd better.  Ron.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd better.  You'd"
+  },
+  {
+    "id": 24,
+    "category": "moral dilemma",
+    "question": "Snape has been unfair to Harry all year. Should we report him?",
+    "target_emotion": "angry/worried",
+    "emotion_used": "angry",
+    "response": "No. We can't do that. It's against school rules. We can only talk to him in private. And he'll be furious. And he'll get angry at us. And we'll get into trouble. It's too dangerous. We'll be expelled.  We can't do it.  I know, I know. But we have to.  We're the only ones who can.  Harry's in danger.  We've got to help him.  It's the"
+  },
+  {
+    "id": 25,
+    "category": "moral dilemma",
+    "question": "A student is being bullied but asks you not to tell anyone.",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "I'm sorry. You can't tell anyone.  You'd be in trouble.  You know that.  I know that.  But I can't tell anyone.  I can't.  I can't.  I can't.  I can't.  I can't.  I can't.  I can't.  I can't.  I can't.  I can't.  I can't.  I can't.  I can't."
+  },
+  {
+    "id": 26,
+    "category": "moral dilemma",
+    "question": "Malfoy called Hermione a mudblood.",
+    "target_emotion": "angry/sad",
+    "emotion_used": "angry",
+    "response": "That's enough, Malfoy. You've gone too far.  I've had enough.  I'm going.  Good night.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight.  Goodnight."
+  },
+  {
+    "id": 27,
+    "category": "moral dilemma",
+    "question": "Dumbledore tells you to do something you think is wrong.",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "I don't know what to do, I don't know what to do.  You don't know what to do, either.  What do you think you're going to do?  Just sit here and watch?  I've got to go.  You've got to go.  I've got to go.  And we're going to come back here tomorrow and see what we've done.  We're going to come back tomorrow and see what we've done.  And"
+  },
+  {
+    "id": 28,
+    "category": "moral dilemma",
+    "question": "You found an old spellbook with dark magic. Read it for research?",
+    "target_emotion": "worried/determined",
+    "emotion_used": "worried",
+    "response": "Harry, it's dangerous. We need to get rid of it. I'll go.  We'll go now.  The headmaster will be here soon.  We don't want to get caught.  I'll take the book.  Be careful.  Be careful.  Be careful.  Don't touch it.  Don't touch it.  Don't touch it.  Don't touch it.  Don't touch it.  Don't touch it.  Don't"
+  },
+  {
+    "id": 29,
+    "category": "moral dilemma",
+    "question": "Your friend cheated on a test and got top marks.",
+    "target_emotion": "angry",
+    "emotion_used": "angry",
+    "response": "What? Who said that?  Ron, why would you say something like that?  I'd never say it.  You know I wouldn't.  I don't even know who said it.  I mean, I don't even know who's here.  I've never heard anyone say anything like that.  I mean, I don't even know who's here.  I mean, I don't even know who's here.  It's all just a load of rubbish"
+  },
+  {
+    "id": 30,
+    "category": "moral dilemma",
+    "question": "If you could turn back time to fix one mistake, would you?",
+    "target_emotion": "neutral/sad",
+    "emotion_used": "neutral",
+    "response": "I would go back and change something in my own life. But I'm not sure if I'd go back and change something in someone else's life. I mean, if you could change one thing in someone else's life, would you?  I'm not sure that's really possible. I mean, it's not like you can just change someone's mind. But I think it would be a good idea to be honest with yourself, and to think about the things you really want."
+  }
+]

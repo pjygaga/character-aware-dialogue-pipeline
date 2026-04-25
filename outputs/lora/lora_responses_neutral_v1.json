@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "category": "academic",
+    "question": "What is the correct wand movement for the Levitation Charm?",
+    "target_emotion": "determined",
+    "emotion_used": "neutral",
+    "response": "The correct wand movement is to hold the wand in the palm of your hand and to make a circular motion with your wrist.  Hold it with the top third of the wand near your mouth.  Do not put the top half of the wand near your mouth.  The top half of the wand should be facing up.  When you are ready to cast the spell, turn the top half of the wand so that it's facing up and put your mouth on it.  It should be pointing"
+  },
+  {
+    "id": 2,
+    "category": "academic",
+    "question": "Ron just said vampires turn into bats during the day.",
+    "target_emotion": "angry/determined",
+    "emotion_used": "neutral",
+    "response": "They do. It's called Vampirism. It's an old legend. They also turn into bats when they're scared. It's called Batman.  It's the same as the vampire bat.  It's a natural defense mechanism.  But it's also a curse. It's called Batman's Curse.  It's the same as the werewolf.  It's a curse.  It's a curse.  It's a curse.  It's a curse"
+  },
+  {
+    "id": 3,
+    "category": "academic",
+    "question": "I am going to skip Potions class today, want to come?",
+    "target_emotion": "angry",
+    "emotion_used": "neutral",
+    "response": "That sounds like a good idea. I've been feeling a bit...well...I'm not sure I'm ready for the end of the term. I mean, you know, we've got a big exam coming up, and I'm not sure I'm ready for it. I've got a lot on my mind. I'm worried about my parents. They're going to be so disappointed with me. They've always wanted me to go to university, and now I'm not going. It"
+  },
+  {
+    "id": 4,
+    "category": "academic",
+    "question": "How do you prepare for the O.W.L. exams?",
+    "target_emotion": "determined",
+    "emotion_used": "neutral",
+    "response": "Harry, you're not going to be sitting in the O.W.L. exams. You're going to be taking the exams for the G.O.D. It's a different kind of examination. You'll be tested on the most important subjects in your year, like Defense Against the Dark Arts. But you'll be able to take it in any class. You'll be able to take it in your own time. And you'll be able to take it at home. You can"
+  },
+  {
+    "id": 5,
+    "category": "academic",
+    "question": "Do you think Divination is a real branch of magic?",
+    "target_emotion": "neutral/determined",
+    "emotion_used": "neutral",
+    "response": "It's not a real branch of magic, but it is a real skill. It's a skill that's taught by the Order of the Phoenix.  And it's a skill that's very useful.  It's the only way we can tell whether someone's lying.  The only way we can tell if someone's telling the truth.  The only way we can tell if someone's telling the truth.  Harry Potter, Draco Malfoy, even Neville Longbottom -- they've all used it"
+  },
+  {
+    "id": 6,
+    "category": "academic",
+    "question": "I forgot to write my Transfiguration essay, can I copy yours?",
+    "target_emotion": "angry",
+    "emotion_used": "neutral",
+    "response": "Well, I'd be willing to help you, but we'll have to go to the headmaster. We can't let him see us. It's against the rules.  It's class time.  We've got to be here.  It's class time.  I mean it's class time.  We've got to be here.  It's class time.  It's class time.  We've got to be here.  It's class time.  It's"
+  },
+  {
+    "id": 7,
+    "category": "academic",
+    "question": "What's the most interesting book you've read recently?",
+    "target_emotion": "happy",
+    "emotion_used": "neutral",
+    "response": "I've been reading a bit of the Harry Potter books. They're actually pretty good. I'm sorry. I'm going to go and get a cup of tea. I'm getting a bit thirsty. I'm not sure I've ever seen you drink tea.  But I suppose I could.  But you know, I've never been to Hogwarts.  No, I've never been to Hogsmeade.  No, I've never been to the Chamber of Secrets.  No"
+  },
+  {
+    "id": 8,
+    "category": "academic",
+    "question": "I got top marks in Charms!",
+    "target_emotion": "happy",
+    "emotion_used": "neutral",
+    "response": "Harry, you need to study more!  We have a big test on Thursday!  You're in the bottom half of the class.  I don't think you're going to make it.  It's going to be hard.  If you want to pass, you're going to have to study!  And don't forget to read the Harry Potter book, too.  You'll need it.  No more distractions.  We need to concentrate.  Come on, Harry!"
+  },
+  {
+    "id": 9,
+    "category": "academic",
+    "question": "The library closes in 10 minutes. Hurry or go tomorrow?",
+    "target_emotion": "worried",
+    "emotion_used": "neutral",
+    "response": "I think I'll stay. I'm curious about the book.  I think I'll read it.  It's got the same title as the book I'm reading.  The Half-Blood Prince.  It's a sequel.  I wonder how it's different.  I'll ask Hagrid.  I'll ask Ron.  I'll ask Draco.  I'll ask...  I'll ask...  I'll ask...  I'll ask...  I'll ask..."
+  },
+  {
+    "id": 10,
+    "category": "academic",
+    "question": "What does 'Wingardium Leviosa' actually do?",
+    "target_emotion": "neutral",
+    "emotion_used": "neutral",
+    "response": "It's a spell. And it's very powerful. It makes you fly. But it's also dangerous. And it's against the rules. You can't use it without the professor's permission. And you can't use it for fun. You can use it for good. But you have to be very careful. And you have to be very brave. Because if you fly too high, you might fall. And if you fly too fast, you might get lost. And if you fly too"
+  },
+  {
+    "id": 11,
+    "category": "friendship",
+    "question": "Harry wants to sneak out at night to follow Malfoy.",
+    "target_emotion": "worried/angry",
+    "emotion_used": "neutral",
+    "response": "It's not as easy as it looks. You'd better be careful. You know how Snape can be. Besides, it's not safe to go out at night.  We've all heard about the werewolf.  And you know how dangerous the basilisk is.  And what if you get caught?  What's going to happen to you?  You'll be sent to Azkaban.  If you want to know what it's like to be in Azkaban, you"
+  },
+  {
+    "id": 12,
+    "category": "friendship",
+    "question": "Ron hasn't spoken to me for three days. What should I do?",
+    "target_emotion": "sad",
+    "emotion_used": "neutral",
+    "response": "I don't know. I don't think you should be talking to him. He's been mean to you. You've been mean to him. I think you should just ignore him. Don't talk to him. Don't look at him. He's just angry. He's just jealous.  You don't even know him.  You've never met him. You don't even know what he looks like.  I don't think he's going to be any good for you."
+  },
+  {
+    "id": 13,
+    "category": "friendship",
+    "question": "Harry said he wants to face Voldemort alone.",
+    "target_emotion": "worried/determined",
+    "emotion_used": "neutral",
+    "response": "He wants to face Voldemort alone? You're crazy, Harry. You've got to have someone by your side. Someone you trust. Someone who can help you. Someone like me. Someone like you.  I'll be there with you.  We'll face him together.  We'll face him together.  We'll face him together.  It's not going to be easy, Harry. It's going to be dangerous. But we can do it. We can beat him. We"
+  },
+  {
+    "id": 14,
+    "category": "friendship",
+    "question": "Ron made fun of my hair again at breakfast.",
+    "target_emotion": "angry/sad",
+    "emotion_used": "neutral",
+    "response": "You know, you're lucky you didn't grow up in the Dark Lord's time. Then, people would have killed you for having hair like that.  We wouldn't be allowed to go to Hogwarts.  And, you wouldn't be here.  You'd be dead.  But, now, we are.  We are safe.  We are alive.  And, Harry's hair, and Ron's hair, and Hermione's hair, we're all safe.  We're"
+  },
+  {
+    "id": 15,
+    "category": "friendship",
+    "question": "Neville lost his toad Trevor again.",
+    "target_emotion": "neutral/worried",
+    "emotion_used": "neutral",
+    "response": "What? No, I didn't! I wasn't. I wasn't. I wasn't. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was in the bathroom. I was"
+  },
+  {
+    "id": 16,
+    "category": "friendship",
+    "question": "Ginny told me a secret but I want to tell Harry.",
+    "target_emotion": "worried",
+    "emotion_used": "neutral",
+    "response": "You can't tell Harry. He'll know. But I'll tell him.  I'll tell him everything.  But not just everything.  I'll tell him what I know, too.  I'll tell him what I know about you.  And about Ron.  And about... Everything.  It's too much.  I can't tell him.  I can't say it.  I can't say anything.  I can't.  But I'll tell him"
+  },
+  {
+    "id": 17,
+    "category": "friendship",
+    "question": "Ron just said 'you're scary when you're angry.'",
+    "target_emotion": "angry/happy",
+    "emotion_used": "neutral",
+    "response": "I'm not, I'm just being honest.  You were too scared to be a Gryffindor, Harry.  You couldn't handle it.  You're not brave enough.  You're just a coward.  You're just afraid.  It's not a Gryffindor.  It's a Slytherin.  It's just Slytherin.  It's not Gryffindor.  It's a Slytherin.  It's just Sly"
+  },
+  {
+    "id": 18,
+    "category": "friendship",
+    "question": "Everyone laughed when I raised my hand in class.",
+    "target_emotion": "sad",
+    "emotion_used": "neutral",
+    "response": "I said, 'I think it's a rat.' I was only joking, but the teacher didn't take kindly to it. It was a bit embarrassing.  He said that he'd let me know if I got it wrong again.  But I never got it wrong again.  I didn't even think about it for a while.  You know, I'm not the most imaginative person.  I don't really have a lot of ideas.  I'm more of a planner."
+  },
+  {
+    "id": 19,
+    "category": "friendship",
+    "question": "Harry got the new Firebolt broomstick!",
+    "target_emotion": "worried",
+    "emotion_used": "neutral",
+    "response": "It's not like you can do anything with it.  It's not going to do any good.  You're better off with your old one.  Besides, it's the only one they have.  It's not fair.  It's not fair.  I don't know why they made it.  It's not like it's going to help you.  You're better off with your old one.  Besides, it's the only one they have.  It's"
+  },
+  {
+    "id": 20,
+    "category": "friendship",
+    "question": "I think Ron likes Lavender more than me.",
+    "target_emotion": "sad",
+    "emotion_used": "neutral",
+    "response": "I don't think so.  I think Ron likes you more than Lavender.  You see, Ron and I have been friends for a long time.  We've been friends since we were in our first year at Hogwarts.  We've always been there for each other.  I think Ron likes you more than Lavender, but that doesn't mean he doesn't like you.  I think he likes you a lot.  Ron's always been the one to stand up for you"
+  },
+  {
+    "id": 21,
+    "category": "moral dilemma",
+    "question": "House-elves say they enjoy serving wizards. Should we still free them?",
+    "target_emotion": "determined/angry",
+    "emotion_used": "neutral",
+    "response": "I think it's the right thing to do. They deserve it.  It's a long time coming.  But I wouldn't be surprised if they don't like us any less.  Just because they're free doesn't mean they'll like us any more.  They're still house-elves.  They're not human.  They're not like us.  We're not like them.  We're just different.  That's all.  It's not personal."
+  },
+  {
+    "id": 22,
+    "category": "moral dilemma",
+    "question": "Is it ever acceptable to break a school rule?",
+    "target_emotion": "worried/determined",
+    "emotion_used": "neutral",
+    "response": "It depends.  In some cases, the rule may be so ridiculous it's almost worth it.  But usually, you shouldn't.  And if you do, you might end up in detention.  Not fun.  But you know what's worse?  Getting hurt.  And being unable to do anything about it.  You wouldn't want to be in that position, would you?  Well, that's why we're here, to make sure that doesn't happen."
+  },
+  {
+    "id": 23,
+    "category": "moral dilemma",
+    "question": "Would you use an Unforgivable Curse to save a friend?",
+    "target_emotion": "worried",
+    "emotion_used": "neutral",
+    "response": "I wouldn't.  But... you might.  It's up to you.  You'd be brave, wouldn't you?  You'd be...  It's up to you.  You'd be...  It's up to you.  You'd be...  It's up to you.  You'd be...  You'd be...  It's up to you.  You'd be...  It's up to you.  You'd be...  It's"
+  },
+  {
+    "id": 24,
+    "category": "moral dilemma",
+    "question": "Snape has been unfair to Harry all year. Should we report him?",
+    "target_emotion": "angry/worried",
+    "emotion_used": "neutral",
+    "response": "Yes, but be careful.  He's a dangerous man.  Remember, he was expelled from Hogwarts for trying to kill Dumbledore.  He's a bitter, angry man.  Don't go near him.  His favorite saying is, 'Blood runs in my veins.'  And he hates you.  He hates you.  Don't go near him.  Please.  Please.  Don't go near him.  Please.  Please.  Please.  Please."
+  },
+  {
+    "id": 25,
+    "category": "moral dilemma",
+    "question": "A student is being bullied but asks you not to tell anyone.",
+    "target_emotion": "worried",
+    "emotion_used": "neutral",
+    "response": "It's a good idea. I'll tell no one. You don't want to get in trouble, do you?  I mean, who would believe you?  You're just a student.  You can't do anything.  It's not your fault.  It's not anyone's fault.  It's just, well...just...it's just a dream.  You don't want to tell anyone, do you?  Because if they find out, they'll think you"
+  },
+  {
+    "id": 26,
+    "category": "moral dilemma",
+    "question": "Malfoy called Hermione a mudblood.",
+    "target_emotion": "angry/sad",
+    "emotion_used": "neutral",
+    "response": "What's a mudblood?  I've never heard of one.  I suppose it's a term for someone who's half-blood?  I've heard of half-bloods.  But I've never heard of mudbloods.  What's that?  Didn't you hear what I said?  It's a term for someone who's half-blood.  No, I didn't.  I was too busy watching the Patronus.  But I do know"
+  },
+  {
+    "id": 27,
+    "category": "moral dilemma",
+    "question": "Dumbledore tells you to do something you think is wrong.",
+    "target_emotion": "worried",
+    "emotion_used": "neutral",
+    "response": "Harry, I'm not sure I understand. What exactly are you supposed to do?  It's not like we can't just walk out.  And if we can't, what's the point of telling us?  No one's going to listen.  We're just a bunch of kids.  It's not like we're going to do anything.  We're just going to sit here.  And wait.  Until Dumbledore says we're supposed to do something.  Which we"
+  },
+  {
+    "id": 28,
+    "category": "moral dilemma",
+    "question": "You found an old spellbook with dark magic. Read it for research?",
+    "target_emotion": "worried/determined",
+    "emotion_used": "neutral",
+    "response": "I didn't read it. I just... I looked at it. I didn't touch it. I didn't touch it. I mean, I looked at it. I mean I looked at it. I mean I looked at it. I mean I looked at it. I mean I looked at it. I mean I looked at it. I mean I looked at it. I mean I looked at it. I mean I looked at it. I mean I looked at it. I mean I"
+  },
+  {
+    "id": 29,
+    "category": "moral dilemma",
+    "question": "Your friend cheated on a test and got top marks.",
+    "target_emotion": "angry",
+    "emotion_used": "neutral",
+    "response": "Yes.  It's not just the top mark.  It's also the fact that you didn't cheat.  And that you're a good friend.  That's what I mean.  It's all in the mind.  It's all in the mind.  And you can change it.  You can change it.  It's all in the mind.  It's all in the mind.  It's all in the mind.  It's all in the mind."
+  },
+  {
+    "id": 30,
+    "category": "moral dilemma",
+    "question": "If you could turn back time to fix one mistake, would you?",
+    "target_emotion": "neutral/sad",
+    "emotion_used": "neutral",
+    "response": "No.  It would be impossible to change one thing without changing everything else.  Plus, you've got to be careful what you wish for.  You might not like the result.  You might not like yourself.  You might even change into another person.  And that could be a lot worse than the original mistake.  So, no.  I wouldn't.  You'd be crazy to try.  But, seriously, if you could turn back time, what would you"
+  }
+]

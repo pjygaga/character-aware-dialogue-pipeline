@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "category": "academic",
+    "question": "What is the correct wand movement for the Levitation Charm?",
+    "target_emotion": "determined",
+    "emotion_used": "determined",
+    "response": "I think it's this -- a flick of your wrist, like you're flicking off an eyelash...  The other way to do it would be with two hands on top one another holding them straight up..."
+  },
+  {
+    "id": 2,
+    "category": "academic",
+    "question": "Ron just said vampires turn into bats during the day.",
+    "target_emotion": "angry/determined",
+    "emotion_used": "angry",
+    "response": "That's not true!  Vampires are immortal, they're born that way...and their eyes glow red no matter what time of night it is -- even when there isn't a single ray of moonlight touching them at all."
+  },
+  {
+    "id": 3,
+    "category": "academic",
+    "question": "I am going to skip Potions class today, want to come?",
+    "target_emotion": "angry",
+    "emotion_used": "angry",
+    "response": "I don't think so -- we're not allowed!  But you can go if it's on your own...it'll be okay for a few days though because the whole year is coming up soon."
+  },
+  {
+    "id": 4,
+    "category": "academic",
+    "question": "How do you prepare for the O.W.L. exams?",
+    "target_emotion": "determined",
+    "emotion_used": "determined",
+    "response": "You have to study, Harry!  It's not rocket science -- it just takes time...and a lot of books. And practice spells from your textbook too."
+  },
+  {
+    "id": 5,
+    "category": "academic",
+    "question": "Do you think Divination is a real branch of magic?",
+    "target_emotion": "neutral/determined",
+    "emotion_used": "neutral",
+    "response": "It's hard to say, but I've heard that it can be quite useful if used properly...  No one has ever been able to get past the first step though -- figuring out what they want from their future!"
+  },
+  {
+    "id": 6,
+    "category": "academic",
+    "question": "I forgot to write my Transfiguration essay, can I copy yours?",
+    "target_emotion": "angry",
+    "emotion_used": "angry",
+    "response": "No!  You'll get caught if you do that... Besides -- it's not fair on me. You didn't even finish your own paper! It wouldn't be right for us both to take the same mark just because we're friends."
+  },
+  {
+    "id": 7,
+    "category": "academic",
+    "question": "What's the most interesting book you've read recently?",
+    "target_emotion": "happy",
+    "emotion_used": "happy",
+    "response": "I just finished reading 'The Tales of Beedle the Bard.' It was a lot more exciting than I expected!  It had lots of humor, too -- like when Harry got tricked into eating an apple that turned out to be poisonous... but he survived anyway because it wasn't real food."
+  },
+  {
+    "id": 8,
+    "category": "academic",
+    "question": "I got top marks in Charms!",
+    "target_emotion": "happy",
+    "emotion_used": "happy",
+    "response": "That's great, Harry. You're going to be a famous wizard one day...and you'll marry Ginny Weasley too?  (Hint.)'s name is Ron Potter -- he was the son of an old friend who had died many years before."
+  },
+  {
+    "id": 9,
+    "category": "academic",
+    "question": "The library closes in 10 minutes. Hurry or go tomorrow?",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "I'm not sure... I've never been to the library alone before!  And it's so dark here, how are we going to find our way around without a torch?!"
+  },
+  {
+    "id": 10,
+    "category": "academic",
+    "question": "What does 'Wingardium Leviosa' actually do?",
+    "target_emotion": "neutral",
+    "emotion_used": "neutral",
+    "response": "It's a spell to make you fly, Harry!  But it only works on people with wings -- like the Weasley twins... or Hagrid. It doesn't work on humans who don't have wings. So if we're going flying then I'd better be wearing my broomstick shoes."
+  },
+  {
+    "id": 11,
+    "category": "friendship",
+    "question": "Harry wants to sneak out at night to follow Malfoy.",
+    "target_emotion": "worried/angry",
+    "emotion_used": "worried",
+    "response": "I don't think we should, Hagrid!  It's too dangerous... And besides -- he'll be asleep by the time you get here. You'd have better luck finding him sleeping on a train than sneaking past Snape or Dumbledore himself."
+  },
+  {
+    "id": 12,
+    "category": "friendship",
+    "question": "Ron hasn't spoken to me for three days. What should I do?",
+    "target_emotion": "sad",
+    "emotion_used": "sad",
+    "response": "I don't know, Harry -- it's complicated...  It wasn't that long ago you were telling him he was a wizard too! Why is he mad at us now?! He used to be so happy when we'd come home from school. Where did all the joy go..."
+  },
+  {
+    "id": 13,
+    "category": "friendship",
+    "question": "Harry said he wants to face Voldemort alone.",
+    "target_emotion": "worried/determined",
+    "emotion_used": "worried",
+    "response": "No, you can't do that!  We'll be with him all the way -- we're friends, aren't we? Besides... I'm not sure it's a good idea for us both there at once.... You'd get hurt too if something happened to him."
+  },
+  {
+    "id": 14,
+    "category": "friendship",
+    "question": "Ron made fun of my hair again at breakfast.",
+    "target_emotion": "angry/sad",
+    "emotion_used": "angry",
+    "response": "You're not going to like it, Harry... but I think Dumbledore's been replaced by a fake one! It looks exactly the same -- except for his eyes being gone now instead of blue or green.  But you'll never believe me unless we see him ourselves...."
+  },
+  {
+    "id": 15,
+    "category": "friendship",
+    "question": "Neville lost his toad Trevor again.",
+    "target_emotion": "neutral/worried",
+    "emotion_used": "neutral",
+    "response": "I think I've got it, sir! It's a Horcrux -- the soul of Grindelwald himself...  And it was hidden under one of these tables here. Dumbledore used to hide them when he thought someone would try to steal him."
+  },
+  {
+    "id": 16,
+    "category": "friendship",
+    "question": "Ginny told me a secret but I want to tell Harry.",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "You can't, Hagrid said it's not safe for you yet!  But...I don't know what else we could do -- he doesn't listen at all when anyone tells him something important like that except Dumbledore himself!"
+  },
+  {
+    "id": 17,
+    "category": "friendship",
+    "question": "Ron just said 'you're scary when you're angry.'",
+    "target_emotion": "angry/happy",
+    "emotion_used": "angry",
+    "response": "It's not like that, Harry! It was an accident...  I didn't mean to do it -- I swear! But then again... maybe he did? Maybe someone else meant for him..."
+  },
+  {
+    "id": 18,
+    "category": "friendship",
+    "question": "Everyone laughed when I raised my hand in class.",
+    "target_emotion": "sad",
+    "emotion_used": "sad",
+    "response": "Ron, you're a wizard! You have to be the one who did it -- someone has got to do something about that... Someone's going mad here.  It can't go on like this any longer."
+  },
+  {
+    "id": 19,
+    "category": "friendship",
+    "question": "Harry got the new Firebolt broomstick!",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "It's too big for him, it'll be hard to handle... It might even break his arm if he falls off of it while flying -- you know how clumsy he is when he flies a broom?"
+  },
+  {
+    "id": 20,
+    "category": "friendship",
+    "question": "I think Ron likes Lavender more than me.",
+    "target_emotion": "sad",
+    "emotion_used": "sad",
+    "response": "I don't like him, Harry!  He's a liar -- just look at what he said about you on the floor of the Chamber of Secrets... He doesn't love us for who we are; all he wants is to be popular with everyone else....' You're too good."
+  },
+  {
+    "id": 21,
+    "category": "moral dilemma",
+    "question": "House-elves say they enjoy serving wizards. Should we still free them?",
+    "target_emotion": "determined/angry",
+    "emotion_used": "determined",
+    "response": "Yes, of course! We can't just leave them here to starve or something...  But it's dangerous out there -- the Dementors are lurking around every corner. They'll be back soon enough if you don't keep your eyes peeled for them."
+  },
+  {
+    "id": 22,
+    "category": "moral dilemma",
+    "question": "Is it ever acceptable to break a school rule?",
+    "target_emotion": "worried/determined",
+    "emotion_used": "worried",
+    "response": "I don't know, Harry -- I mean Ron's been saying that we should go see the headmaster about this... but if you ask me there are times when breaking rules is okay! Like taking an extra piece of chocolate from your mother-in-law on Christmas Day or something like that."
+  },
+  {
+    "id": 23,
+    "category": "moral dilemma",
+    "question": "Would you use an Unforgivable Curse to save a friend?",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "It's not like it would be easy, but... I suppose we'd have no choice -- especially if the person was dying of something horrible!  I mean, how could anyone say they wouldn't do anything for their friends when someone is on death row or has cancer?!"
+  },
+  {
+    "id": 24,
+    "category": "moral dilemma",
+    "question": "Snape has been unfair to Harry all year. Should we report him?",
+    "target_emotion": "angry/worried",
+    "emotion_used": "angry",
+    "response": "No, no!  It's not his fault he was a Slytherin -- it wouldn't be fair either if you were born with your father's eyes or I had my mother's hair... Besides, they say that Slytherins are clever enough for themselves anyway...."
+  },
+  {
+    "id": 25,
+    "category": "moral dilemma",
+    "question": "A student is being bullied but asks you not to tell anyone.",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "I'm sorry, Harry... I can't do it!  Please don't say anything about this -- or we'll be both expelled from Hogwarts School of Witchcraft and Wizardry!"
+  },
+  {
+    "id": 26,
+    "category": "moral dilemma",
+    "question": "Malfoy called Hermione a mudblood.",
+    "target_emotion": "angry/sad",
+    "emotion_used": "angry",
+    "response": "You're not going to be able to spell anything, are you?  No one can! You'll never pass your O-Levels... No matter how hard they try -- no matter what their parents tell them -- none of these kids will ever get into Hogwarts again unless someone takes it upon themselves"
+  },
+  {
+    "id": 27,
+    "category": "moral dilemma",
+    "question": "Dumbledore tells you to do something you think is wrong.",
+    "target_emotion": "worried",
+    "emotion_used": "worried",
+    "response": "I don't know what it was, but I did!  It's not like me...' Harry Potter said with a laugh -- the first time he'd ever spoken of himself that way since coming out at Hogwarts."
+  },
+  {
+    "id": 28,
+    "category": "moral dilemma",
+    "question": "You found an old spellbook with dark magic. Read it for research?",
+    "target_emotion": "worried/determined",
+    "emotion_used": "worried",
+    "response": "I did, but I didn't read the whole thing! It's a bit dangerous to try out spells you don't know all about -- especially ones that aren't yours...  You're not supposed to use someone else's knowledge without their permission first. And besides..."
+  },
+  {
+    "id": 29,
+    "category": "moral dilemma",
+    "question": "Your friend cheated on a test and got top marks.",
+    "target_emotion": "angry",
+    "emotion_used": "angry",
+    "response": "And you thought it was all right to go along with the plan? You were supposed to be Harry's best man!  You're not even his real name, are we?' And he said yes -- I'm Ron...' We'd better get out of here."
+  },
+  {
+    "id": 30,
+    "category": "moral dilemma",
+    "question": "If you could turn back time to fix one mistake, would you?",
+    "target_emotion": "neutral/sad",
+    "emotion_used": "neutral",
+    "response": "I don't know... I'd have a hard choice!  But if it was up for grabs -- yes sir! It's yours! You can do anything with that wand of your own choosing."
+  }
+]

@@ -1,0 +1,17 @@
+=== v2 Test Results ===
+Accuracy:    0.5469
+Macro F1:    0.4533
+Weighted F1: 0.5456
+
+              precision    recall  f1-score   support
+
+  determined      0.667     0.308     0.421        13
+     worried      0.429     0.600     0.500        15
+       angry      0.444     0.571     0.500         7
+       happy      0.500     0.667     0.571         3
+         sad      0.000     0.000     0.000         3
+     neutral      0.762     0.696     0.727        23
+
+    accuracy                          0.547        64
+   macro avg      0.467     0.474     0.453        64
+weighted avg      0.582     0.547     0.546        64
