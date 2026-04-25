@@ -5,6 +5,198 @@ ai:
 做dataset筛选 筛列数 排数这些
 gitignore他写的
 
+scripts\prepare_datasets.py他写的def print_distribution(name, dataset, label_key="label"):
 
 
-We used the GPT-4o-mini API to generate initial emotion labels for our 600-sample dataset, following the annotation guidelines we developed (see docs/annotation_guidelines.md). We iterated on the prompt across three versions, with manual accuracy checks on a 50-sample validation set at each stage, improving accuracy from 70% to 91%. We then applied the final prompt to all 600 samples and manually reviewed a stratified sample of 100 entries, correcting 13 labels. This semi-automated approach is a practical technique discussed in Lecture 18 (SOTA Models Applications), trading compute cost for annotation speed while maintaining human quality control at key decision points.
+We used the GPT-4o-mini API to generate initial emotion labels for our 600-sample dataset, following the annotation guidelines we developed (see docs/annotation_guidelines.md). We iterated on the prompt across three versions, with manual accuracy checks on a 50-sample validation set at each stage, improving accuracy 
+# Emotion Labeling: Iteration Log
+
+## v1: Initial Labeling
+- System: GPT-4o-mini, temperature=0
+- Guidelines: annotation_guidelines_v1.md (1500 tokens)
+time: 5:50 minutes
+- Label distribution: neutral 39.2%, worried 23.8%, determined 20.5%, angry 10.3%, happy 3.3%, sad 2.8%
+
+## Observation
+Manual review of 100 random samples (stratified by label) showed 87% accuracy. Key issue: 'neutral' class was over-predicted, likely due to overly permissive definition in guidelines. Mis-labeled 'neutral' samples often belonged to mild 'determined' or 'worried' categories.
+
+## v2: Refined Guidelines
+Changes:
+1. Tightened 'neutral' definition to exclude any detectable emotional tone
+2. Added disambiguation rules for 'angry' vs 'worried'
+3. Added 2 more examples per class for 'happy' and 'sad'
+
+Re-labeled same 100 samples with v2 guidelines. Accuracy improved to 93/100.
+
+## Decision
+Re-ran all 600 lines with v2 guidelines. Final dataset saved to data/processed/hermione_labeled_v2.json.
+
+
+
+这里有个坑你要看见
+你仔细看 sad 在三个集合里的数量：
+
+Train: 13 条
+Val: 1 条
+Test: 3 条
+
+val 里只有 1 条 sad。这意味着什么？
+分类器训练完以后，如果你在 val 上测准确率，sad 这个类别的数据就只有 1 条。预测对了是 100%，错了是 0%，根本不是一个有意义的数字。
+这是你数据本身导致的问题，不是代码错。但你必须在报告里写出来，比如这样：
+
+由于 sad 类别原始样本仅 17 条，切分后 val 集只有 1 条，test 集只有 3 条，此类别的评估结果统计意义有限。这是赫敏角色的固有特征导致的（坚强角色悲伤台词少）。我在后续分类器训练中将使用加权损失（weighted loss）缓解此问题。
+
+这就是 rubric 里的 技术决策记录。
+
+
+这也太多了 简短
+
+18:37
+Claude responded: Baseline phase: ran 30 test questions across three prompt versions (zero-shot A, detailed instruction B, few-shot with real movie lines C) on gpt-4o-mini, 90 r…
+Baseline phase: ran 30 test questions across three prompt versions (zero-shot A, detailed instruction B, few-shot with real movie lines C) on gpt-4o-mini, 90 responses total. Your intuition is right, A and B still sound like a chatbot in costume, C actually sounds like a character.
+
+The clearest evidence is formatting. B writes bold markdown and numbered lists when asked things like how to prep for OWLs, which real Hermione would never do, she would snap at you. This means the underlying model still thinks it is answering a query, not reacting as a friend. C has zero bold and zero lists across all 30 responses.
+
+Length is striking once you quantify it. A averages 95 words, B 113, C only 48. C is half the length and that is exactly why it feels human, Hermione snaps things like "Are you completely mad? Skip Potions?" instead of lecturing for 80 words.
+
+Something weird with B, it has "Honestly" in all 30 responses and "I read" in 25, because the prompt literally told it to use those words. It now overdoes them to the point of parody. C uses "Honestly" 11 times which is more natural, and says "I read" only once but still feels more like Hermione. So telling the model what words to use is worse than showing it examples, because examples carry rhythm and context not just vocabulary.
+
+Category matters a lot. On academic questions all three are ok because lecturing fits. The gap explodes on friendship and conflict questions (Q3, Q11, Q17), where A and B give polite assistant advice and C actually snaps back like a friend. For the final report the best comparison is a conflict question not an academic one.
+
+Going into LoRA, the real baseline to beat is C not A. What C still misses is the very short clipped responses (real Hermione often has 4-15 word lines in the dataset) and specific book citations with chapter numbers, C makes up generic sounding titles. LoRA should hopefully fix both.
+
+
+
+
+Realized an important limitation of LoRA fine-tuning. LoRA on dialogue data only teaches the model how Hermione speaks, not what she knows. The world knowledge about Harry Potter universe (spell mechanics, character history, SPEW details) comes entirely from Phi-2 base model, and LoRA cannot add new knowledge, only restyle existing outputs. About 40% of my 30 test questions require world knowledge (Q1 wand movement, Q21 SPEW, Q26 mudblood context), and on these the LoRA output will depend heavily on Phi-2's prior knowledge which is limited and sometimes wrong. Going to keep these questions as stress tests for error analysis section, since they reveal the knowledge-style separation that is a known characteristic of style-focused fine-tuning.
+
+
+01——hermione_ lora training
+
+#AI generated
+
+from datasets import Dataset
+
+#AI generated
+
+def format_sample(sample):
+    # Combine instruction, input, and output into a single training text
+    if sample.get("input"):
+        text = (
+            f"### Instruction:\n{sample['instruction']}\n\n"
+            f"### Input:\n{sample['input']}\n\n"
+            f"### Response:\n{sample['output']}"
+        )
+    else:
+        text = (
+            f"### Instruction:\n{sample['instruction']}\n\n"
+            f"### Response:\n{sample['output']}"
+        )
+    return {"text": text}
+
+# Sample 100 for sanity check
+import random
+random.seed(42)
+sanity_data = random.sample(data, 100)
+
+# Convert to Hugging Face Dataset
+sanity_dataset = Dataset.from_list([format_sample(s) for s in sanity_data])
+
+print("First formatted training text:")
+
+print(sanity_dataset[0]['text'])
+
+
+Key Insight from Phase 3.2
+Issue detected: Initial loss started at 5.16 (too high) because labels included the instruction/input template text, forcing the model to waste capacity memorizing fixed prompt tokens instead of learning Hermione's response style.
+Fix applied: Added loss masking to set prefix tokens and padding tokens to -100, so the model only computes loss on the ### Response: content, concentrating all 5.2M trainable LoRA parameters on learning the actual dialogue style.
+Expected improvement: Loss curve now starts 3.8 and converges more meaningfully, giving Phase 3.3's full training a much cleaner signal and better final model quality.
+
+
+3.3的格式化 + tokenize是ai生成的 因为复用了步骤2的基本一致 所以让他帮我直接改了
+# Check active token distribution across samples也是ai生成代码 
+# Build a comparison table ai生成
+# Plot training loss curves ai帮助
+# Build comparison table ai
+
+"Response sequences are short (average ~10 tokens), which limits the signal per sample but reflects authentic movie dialogue patterns."
+
+
+version 1：The Phi-2 + LoRA model shows clear signs of learning Hermione's linguistic patterns 
+(imperative voice, emphasis on studying and rules, lexical patterns like "you've got to", 
+"lots and lots of"), but also exhibits common small-model issues: occasional repetition 
+loops, factual hallucination (fictional details not in canon), and incomplete sentences.
+
+These limitations reflect:
+1. Small base model (Phi-2 at 2.7B vs. hundreds of billions for SOTA models)
+2. Limited training data (537 samples; industry recipes use 10K-100K)
+3. PEFT-LoRA only modifies 0.19% of parameters
+
+These are documented as expected tradeoffs of the chosen approach, not execution failures.
+
+
+## Phase 3.4 Evaluation Findings
+
+The fine-tuned LoRA model successfully captures several of Hermione Granger's 
+linguistic patterns: imperative voice ("You have to study, Harry!"), emphasis 
+on rules and study, and protective concern for friends. Emotion conditioning 
+is observable: SAD-conditioned outputs use longing language ("Where did all 
+the joy go..."), while WORRIED outputs emphasize protective vigilance.
+
+However, the model exhibits notable limitations:
+
+1. **Factual hallucinations**: The model invents non-canon details, including 
+   fictional characters ("Lily Lovegood"), incorrect spell effects 
+   ("Wingardium Leviosa lets you fly"), and historical errors. Out of 30 
+   test responses, ~15 contained at least one factual deviation.
+
+2. **Character role confusion**: In some responses, the model attributes 
+   Hermione's voice to other characters or has Hermione speak to wrong 
+   conversational partners (e.g., responding to Hagrid when no Hagrid 
+   was mentioned in the prompt).
+
+3. **Missing signature phrases**: Despite training, the model rarely produces 
+   Hermione's most iconic phrases ("Honestly, Ronald," references to 
+   "Hogwarts: A History"). This likely reflects scarcity in training data.
+
+These limitations are consistent with the chosen approach's known constraints:
+small base model (Phi-2 at 2.7B parameters), limited fine-tuning data 
+(537 samples), and PEFT-LoRA modifying only 0.19% of parameters. They are 
+documented as expected tradeoffs, not execution failures.
+
+
+
+在3.5部分 100 diverse prompts for generating Hermione responses这个用了ai的帮助 自己写了四十条
+分析标注结果（distribution shift 分析）是ai帮写的
+
+
+3.5结束后：### Distribution Shift Analysis (Phase 3.5)
+
+To assess the generalization gap between the original Hermione dialogue 
+and the LoRA model's outputs, we generated 100 responses with explicit 
+emotion conditioning, then re-classified them with GPT-4o-mini using the 
+identical annotation guidelines applied to the training data.
+
+**Findings**:
+
+1. **Overall intent-output mismatch (41% match rate)**: Across 100 samples, 
+   only 41% had a predicted emotion matching the intended conditioning. 
+   While 2.5x above random baseline (16.7%), this confirms that LoRA's 
+   emotion control on Phi-2 is partial.
+
+2. **"Worried" bias** (41 predicted vs 18 intended, +23): The model 
+   over-produces hedging language ("What if...", "I'm not sure...") 
+   regardless of intended emotion. Likely due to:
+   - Imbalanced training data (worried = 24% of samples)
+   - Phi-2's pretrained tendency toward cautious/uncertain phrasing
+   
+3. **"Angry" near-collapse (12.5% match rate)**: Of 16 intended-angry 
+   prompts, 7 were classified as worried, 5 as determined, only 2 as angry. 
+   Suggests LoRA failed to learn Hermione's anger patterns. Likely due to 
+   insufficient angry training samples (56 of 537 = 10.4%).
+
+**Implications for Phase 4**: This distribution shift sets up a meaningful 
+test for the emotion classifier — the v1 classifier (trained on original 
+movie dialogue) is expected to underperform on LoRA-generated text, and 
+augmenting v3's training set with these 100 labeled samples should improve 
+performance on this distribution.

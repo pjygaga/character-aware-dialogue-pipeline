@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/prepare_datasets.py)",
+      "Bash(python src/data/prepare_datasets.py)",
+      "Bash(python src/classifier/rule_baseline.py)"
+    ]
+  }
+}

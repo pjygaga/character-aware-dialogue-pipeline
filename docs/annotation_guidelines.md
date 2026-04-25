@@ -64,13 +64,25 @@ examples:
 "I can't believe he's gone."
 "I just... I don't know what to do anymore."
 
-neutral
-when none of the above really fit. she's asking a normal question, stating a fact with no emotion, or just saying like "yes" or "okay" (if it's long enough to count). when in doubt between neutral and something else, if the emotion is only very mild, go with neutral.
-examples:
+### neutral (USE SPARINGLY)
 
-"Yes, that's correct."
-"Harry, this way."
+CRITICAL: Do NOT use neutral as a default or safe choice. Most Hermione lines have some emotional undertone.
 
+ONLY use neutral if ALL of these are true:
+- The line is a pure factual statement with no emotional coloring
+- No urgency, no worry, no assertion, no frustration
+- It would sound identical if said by any character
+
+Examples of TRUE neutral (rare):
+- "Yes." (as acknowledgment)
+- "It's on the third floor."
+
+Examples that are NOT neutral (common mistakes):
+- "We need to go now" -> determined (urgency)
+- "Harry, listen" -> determined (assertion)
+- "I don't think so" -> worried or determined depending on context
+
+If you're choosing between neutral and ANY other label, choose the other label.
 
 priority rules (when two emotions could fit)
 sometimes a line can feel like two emotions at the same time. here are the rules:
@@ -79,6 +91,7 @@ determined beats worried. if she's worried but still giving a plan, its determin
 angry beats sad. if she's crying AND yelling, pick angry. because angry is more action-y.
 neutral is the last resort. don't pick neutral just because you're lazy. only pick it when really nothing else fits.
 if its still a tie, pick the one that would be more useful for image generation. because that's the downstream task. so determined/angry/worried are more useful than happy/sad/neutral (they have stronger visual signals).
+angry is about other people or things that make her frustrated (e.g., Ron being lazy, Malfoy being cruel). worried is about threats or bad outcomes (e.g., getting caught, failing exams). If the line is about a person -> probably angry. If the line is about a future event -> probably worried
 
 
 things to watch for:

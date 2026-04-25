@@ -1,0 +1,234 @@
+[
+  {
+    "text": "The Forest of Dean.  I came here once with my mum and dad, years ago.  It's just how I remember it. The trees.  The river.  It's like nothing's changed.  Not true, of course.  Everything's changed.  If I brought my parents here, they wouldn't recognize any of it.  Not the trees.  Not the river.  Not... me.",
+    "label": "sad"
+  },
+  {
+    "text": "It means dirty blood.â Mudblood's a really foul name for someone who is Muggle-born. Someone with non-magic parents. Someone like me. It's not a term one usually hears in civilized conversation.",
+    "label": "determined"
+  },
+  {
+    "text": "That'll be the books.",
+    "label": "neutral"
+  },
+  {
+    "text": "Stinksap?  You're not sick, are you?",
+    "label": "worried"
+  },
+  {
+    "text": "But I hate that thing -- that's the wand that killed Sirius! How can I hold it and not feel...",
+    "label": "angry"
+  },
+  {
+    "text": "Dean was told by Parvati that... Please don't ask me say it again. Hagrid's looking for you.",
+    "label": "neutral"
+  },
+  {
+    "text": "Mad-eye's doing, I'd guess.  In case Snape decided to come snooping.",
+    "label": "worried"
+  },
+  {
+    "text": "Stop, stop, stop. You're going to take someone's eye out. Besides, you're saying it wrong. It's Levi-o-sa, not Leviosar.",
+    "label": "determined"
+  },
+  {
+    "text": "We've already been through enough people why don't you just go and do it yourself? Ughh. What do you want me to say again?",
+    "label": "angry"
+  },
+  {
+    "text": "He looks different, don't you think?  Draco.  Almost... ill.",
+    "label": "worried"
+  },
+  {
+    "text": "I wanted to know something about your course aims.",
+    "label": "neutral"
+  },
+  {
+    "text": "Yes, but I'm exceptionally perceptive.",
+    "label": "neutral"
+  },
+  {
+    "text": "Granger, sir.  That one there is Veritaserum.  And that would be Polyjuice Potion.  And that is Amortentia! The most powerful love potion in the world.",
+    "label": "determined"
+  },
+  {
+    "text": "You go, I'll stay.",
+    "label": "worried"
+  },
+  {
+    "text": "Well, not us specifically, but definitely Dumbledore and the Order.",
+    "label": "neutral"
+  },
+  {
+    "text": "Actually, I'm highly logical, which allows me to look past the extraneous detail and perceive clearly that which others overlook.",
+    "label": "determined"
+  },
+  {
+    "text": "\"The only stone currently in existence belongs to Mr. Nicholas Flamel, the noted alchemist, who last year celebrated his 665th birthday!\" That's what Fluffy's guarding on the 3rd floor. That's what's under the trapdoor...the Philosopher's Stone!",
+    "label": "determined"
+  },
+  {
+    "text": "You don't understand.  Dirt and rust have no effect on the blade. It only takes in that which makes it stronger.",
+    "label": "determined"
+  },
+  {
+    "text": "She's not alone.  Even my parents -- and they're Muggles -- know something bad is happening.",
+    "label": "worried"
+  },
+  {
+    "text": "Of course, and that explains the Vanishing Cabinet as well!",
+    "label": "determined"
+  },
+  {
+    "text": "I'm always mad at him.",
+    "label": "angry"
+  },
+  {
+    "text": "Just go. You're wasting time!",
+    "label": "angry"
+  },
+  {
+    "text": "How is it you --",
+    "label": "neutral"
+  },
+  {
+    "text": "Me? I've been here all this time.",
+    "label": "neutral"
+  },
+  {
+    "text": "Can't make an omelette without breaking a few eggs.",
+    "label": "neutral"
+  },
+  {
+    "text": "Um... it's a surprise.  Besides, it's you we need to worry about. And you can't pick just anyone. See that girl over there.  That's Romilda Vane.  Rumor has it she's trying to slip you a love potion.",
+    "label": "worried"
+  },
+  {
+    "text": "Of course. That's why he knew to give you the chocolate, Harry.",
+    "label": "neutral"
+  },
+  {
+    "text": "I didn't take anything. Please. I didn't take anything.",
+    "label": "worried"
+  },
+  {
+    "text": "Oh, do you mind me trying? The Grim, possibly.",
+    "label": "neutral"
+  },
+  {
+    "text": "Wake up. Wake up Ronald!",
+    "label": "angry"
+  },
+  {
+    "text": "Keep trying. Come on. Quickly. Buckbeak. Okay? Quickly. Hurry up. Okay?",
+    "label": "determined"
+  },
+  {
+    "text": "If you want to kill Harry, you'll have to kill us too!",
+    "label": "determined"
+  },
+  {
+    "text": "Even they aren't that thick. But there might be another way. Mind you, it would be difficult. Not to mention, we would be breaking about fifty school rules. And, it'll be dangerous. Very dangerous.",
+    "label": "worried"
+  },
+  {
+    "text": "Since Professor Snape set the essay.",
+    "label": "neutral"
+  },
+  {
+    "text": "See me doing what things?",
+    "label": "neutral"
+  },
+  {
+    "text": "We have to go.",
+    "label": "determined"
+  },
+  {
+    "text": "Harry, are you all right?",
+    "label": "worried"
+  },
+  {
+    "text": "Mr. Lovegood.  Thank you, sir --",
+    "label": "neutral"
+  },
+  {
+    "text": "Ron you spoil everything!",
+    "label": "angry"
+  },
+  {
+    "text": "Ignotus... Hey, Har --",
+    "label": "neutral"
+  },
+  {
+    "text": "Oh, are you doing magic? Let's see then.",
+    "label": "neutral"
+  },
+  {
+    "text": "Take your time, Harry. We'll be here when you are.",
+    "label": "neutral"
+  },
+  {
+    "text": "Too dangerous.  If Voldemort's taken over the Ministry, none of the old places are safe.",
+    "label": "worried"
+  },
+  {
+    "text": "I thought it worked out rather nicely.",
+    "label": "happy"
+  },
+  {
+    "text": "Do you hear much from the others? From the Order?",
+    "label": "neutral"
+  },
+  {
+    "text": "It looks like it's been down here forever.",
+    "label": "neutral"
+  },
+  {
+    "text": "We were trying to find Professor Dumbledore. We had to tell him...",
+    "label": "determined"
+  },
+  {
+    "text": "Promise you'll write this summer. Both of you.",
+    "label": "worried"
+  },
+  {
+    "text": "I know something that could cheer you up.",
+    "label": "happy"
+  },
+  {
+    "text": "He could smell it.  My perfume.",
+    "label": "neutral"
+  },
+  {
+    "text": "I thought it was a picture of an eye, but now I don't think it is. It isn't a rune and it's not in Spellman's Syllabary either.  And it's been inked in -- somebody drew it -- it isn't part of the book.",
+    "label": "neutral"
+  },
+  {
+    "text": "We're not supposed to be here. This is the 3rd floor. It's forbidden.",
+    "label": "worried"
+  },
+  {
+    "text": "What d'you mean -- wearing it?",
+    "label": "neutral"
+  },
+  {
+    "text": "It's rumored to smell differently to each person, according to what attracts them.  For example, I smell freshly mown grass and new parchment and spearmint toothpaste --",
+    "label": "neutral"
+  },
+  {
+    "text": "There have always been Cloaks --",
+    "label": "neutral"
+  },
+  {
+    "text": "Have you seen Ron? I can't find him anywhere.",
+    "label": "worried"
+  },
+  {
+    "text": "Okay, go, Harry. Go!",
+    "label": "determined"
+  },
+  {
+    "text": "Listen Harry, they've captured Sirius. Any minute the dementors are going to perform the Kiss.",
+    "label": "worried"
+  }
+]

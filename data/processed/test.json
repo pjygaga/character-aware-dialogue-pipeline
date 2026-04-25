@@ -1,0 +1,258 @@
+[
+  {
+    "text": "Stop moving, both of you. This is Devil's Snare. You have to relax. If you don't, it will only kill you faster.",
+    "label": "determined"
+  },
+  {
+    "text": "Wizard rule over Muggles.",
+    "label": "neutral"
+  },
+  {
+    "text": "Was that an owl I heard?",
+    "label": "neutral"
+  },
+  {
+    "text": "Why didn't it work for him? The Elder wand.",
+    "label": "worried"
+  },
+  {
+    "text": "Take it off.  Now.",
+    "label": "angry"
+  },
+  {
+    "text": "Harry, you don't have a clue where the next Horcrux is.  And neither do I.  But this, this means something.  I'm sure of it.",
+    "label": "determined"
+  },
+  {
+    "text": "Ronald would like me to tell you that Seamus told him that Dean was told by Parvati that Hagrid was looking for you.",
+    "label": "neutral"
+  },
+  {
+    "text": "Harry, they went the wrong way!",
+    "label": "worried"
+  },
+  {
+    "text": "No, they can't. It's not a very common gift, Harry. This is bad.",
+    "label": "worried"
+  },
+  {
+    "text": "Standard book of spells, Chapter 7.",
+    "label": "neutral"
+  },
+  {
+    "text": "You didn't put it in? Ron only thought you did?",
+    "label": "neutral"
+  },
+  {
+    "text": "No idea. Look. It's Lupin.",
+    "label": "neutral"
+  },
+  {
+    "text": "Yes. Couldn't you tell? McGonagall's worried. All the teachers are.",
+    "label": "worried"
+  },
+  {
+    "text": "I'll go with you. I/'ll --",
+    "label": "neutral"
+  },
+  {
+    "text": "How does it feel, Harry?  When you see Dean with Ginny? I know, Harry.  You're my best friend.  I see how you look at her.",
+    "label": "worried"
+  },
+  {
+    "text": "Well?  How do you feel?",
+    "label": "neutral"
+  },
+  {
+    "text": "Stop it! Can't you see it's bothering him, stop it!",
+    "label": "angry"
+  },
+  {
+    "text": "Where've you been, Harry?  And what happened to your face?",
+    "label": "worried"
+  },
+  {
+    "text": "Ron!  I've found him!",
+    "label": "happy"
+  },
+  {
+    "text": "Look at you playing with your cards. Pathetic! We've got final exams coming up soon.",
+    "label": "angry"
+  },
+  {
+    "text": "But sir, the second task is only hours away and...",
+    "label": "worried"
+  },
+  {
+    "text": "The Heir of Slytherin has returned to Hogwarts. The question is, who is it?",
+    "label": "neutral"
+  },
+  {
+    "text": "You hear this voice, a voice only you can hear, and then Mrs. Norris turns up Petrified. It's just strange.",
+    "label": "neutral"
+  },
+  {
+    "text": "Yes, and you must! Harry, you're in Hagrid's hut now. If you just go bursting in, you'll think you've gone mad. Awful things happen to wizards who meddle with time. We can't be seen.",
+    "label": "determined"
+  },
+  {
+    "text": "But was it here?  Did you ever see it?",
+    "label": "neutral"
+  },
+  {
+    "text": "I can't believe they're going to kill Buckbeak. It's just too horrible.",
+    "label": "sad"
+  },
+  {
+    "text": "I'm sure Madam Pomfrey will fix it in a heartbeat.",
+    "label": "neutral"
+  },
+  {
+    "text": "We're in the Shrieking Shack, aren't we?",
+    "label": "neutral"
+  },
+  {
+    "text": "What's got your wand in a knot?",
+    "label": "angry"
+  },
+  {
+    "text": "What happened out there?",
+    "label": "worried"
+  },
+  {
+    "text": "I've already got mine. Millicent Bulstrodeâ Slytherin- I got this off her robes. I'm going to go check on the Polyjuice Potion. Make sure that Crabbe and Goyle find these.",
+    "label": "determined"
+  },
+  {
+    "text": "Bit early for mail, isn't it?",
+    "label": "neutral"
+  },
+  {
+    "text": "He called me a Mudblood.",
+    "label": "angry"
+  },
+  {
+    "text": "What?  No, Harry -- you've got to go see Slughorn.  We have a plan --",
+    "label": "determined"
+  },
+  {
+    "text": "Ron's right.  Cappuccino, please.",
+    "label": "neutral"
+  },
+  {
+    "text": "They did that to you? But why?",
+    "label": "worried"
+  },
+  {
+    "text": "It's dangerous, Harry.  But I have to admit, recently even I've been thinking we might have to go.  I think it's possible something else is hidden there. The sword.  If Dumbledore didn't want it falling into the Ministry's hands, but wanted you to find it, what better place to hide it than the birthplace of the founder of Gryffindor himself?",
+    "label": "determined"
+  },
+  {
+    "text": "You'll be okay, Harry. You're a great wizard, you really are.",
+    "label": "happy"
+  },
+  {
+    "text": "You think she's working for You- Know-Who?",
+    "label": "worried"
+  },
+  {
+    "text": "I went looking for the troll. I'd read about them and thought I could handle it. But I was wrong. If Harry and Ron hadn't come and found me...I'd probably be dead.",
+    "label": "worried"
+  },
+  {
+    "text": "We've all made sacrifices, Harry.",
+    "label": "sad"
+  },
+  {
+    "text": "Yeah but I heard Draco's father's furious. We haven't heard the end of this.",
+    "label": "worried"
+  },
+  {
+    "text": "Is that really what my hair looks like from the back?",
+    "label": "neutral"
+  },
+  {
+    "text": "Completely, utterly, without question.",
+    "label": "determined"
+  },
+  {
+    "text": "She introduced him to Dumbledore. It made sense.  Dumbledore's mother had just died, Grindelwald was troubled and they were both brilliant -- they'd never really had anyone they could talk to on the same level.  They did a lot of talking that summer.  But they always returned to one particular subject.",
+    "label": "neutral"
+  },
+  {
+    "text": "I've always admired your courage, Harry, but sometimes... you're really thick.",
+    "label": "angry"
+  },
+  {
+    "text": "No, Harry. Even in the wizarding world, hearing voices isn't a good sign.",
+    "label": "worried"
+  },
+  {
+    "text": "Good morning, Mr. Weasley.",
+    "label": "neutral"
+  },
+  {
+    "text": "I don't want you to say anything you wouldn't say if we weren't about to be killed by a giant snake! It'll just ruin it!",
+    "label": "worried"
+  },
+  {
+    "text": "Which is why Dumbledore left it to you in his will.",
+    "label": "neutral"
+  },
+  {
+    "text": "The staircases change, remember?",
+    "label": "neutral"
+  },
+  {
+    "text": "We can't just stand here! Who's got an idea?",
+    "label": "determined"
+  },
+  {
+    "text": "You can't let him in, Harry. Dumbledore himself said it.  You have to close your mind.  It's too dangerous --",
+    "label": "determined"
+  },
+  {
+    "text": "Muggles who've just been laying flowers on your parents' grave.",
+    "label": "sad"
+  },
+  {
+    "text": "I thought it had stopped.",
+    "label": "worried"
+  },
+  {
+    "text": "I don't know, Harry, but it sounded like you were egging the snake on, or something. Harry, listen to me. There's a reason the symbol of Slytherin House is a serpent. Salazar Slytherin was a Parselmouth. He could talk to snakes, too.",
+    "label": "determined"
+  },
+  {
+    "text": "Exactly. But it's tricky. I've never seen a more complicated potion.",
+    "label": "neutral"
+  },
+  {
+    "text": "Tell me. What you saw.",
+    "label": "neutral"
+  },
+  {
+    "text": "Honestly, Ernie, do you think I'd just leave it lying around? Besides, its enchanted.",
+    "label": "determined"
+  },
+  {
+    "text": "Come on, I'll explain in a minute.",
+    "label": "determined"
+  },
+  {
+    "text": "Because they are unforgivable. Use of any one of them will...",
+    "label": "determined"
+  },
+  {
+    "text": "It's a bit strange, isn't it?",
+    "label": "neutral"
+  },
+  {
+    "text": "No I have not. And if you had a shred of self-respect you would turn that book in.",
+    "label": "angry"
+  },
+  {
+    "text": "You have a lovely house, Miss Bagshot.",
+    "label": "happy"
+  }
+]
