@@ -60,3 +60,7 @@ The following non-trivial issues required diagnosis and intervention beyond what
 - **Phase 3.2 — Loss masking bug**: initial training loss started at 5.16 because labels included instruction template tokens. Diagnosed by inspecting per-token loss; fixed by setting prefix and padding tokens to -100, dropping initial loss to 3.8.
 - **Phase 3.5 — Emotion conditioning failure on 'angry' class**: observed only 12.5% intent-match rate; root cause traced to training-set imbalance (10.4% angry samples) compounded by Phi-2's prior toward cautious phrasing. *(Acknowledged limitation, not resolved within project scope — discussed further in error analysis.)*
 - **Stage 5 — SD identity drift under emotion weighting**: Compel weight syntax (`++`) initially destabilized character identity; resolved by applying matching weights to identity tokens.
+
+### Documentation & Repository Structure
+
+The repository's markdown documentation (README.md, SETUP.md, ATTRIBUTION.md, docs/iteration_log.md) was structured and edited with Claude Code (April 2026). I provided the source content — experiment results, design decisions, and my own development notes and descriptions — and Claude organized it into the section layouts, surfaced internal inconsistencies, and rewrote scattered notes into coherent narrative form. The associated repository cleanup (archive/ creation, requirements.txt consolidation from notebook pip-install cells, removal of stale files) was also Claude-assisted.
