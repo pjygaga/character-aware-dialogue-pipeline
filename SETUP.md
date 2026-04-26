@@ -33,6 +33,14 @@ Notebooks 01 (LoRA training + checkpoint backup) and 03 (pipeline inference) rea
 
 To use a different layout, edit the path constants near the top of each notebook (`LORA_MODEL_PATH`, `CLASSIFIER_PATH`, `OUTPUT_DIR`, `IMAGE_PROMPTS_DIR`, `DRIVE_BASE`).
 
+**Local-vs-Colab path mapping.** When running notebooks locally instead of in Colab, replace the Drive paths above with their repository equivalents:
+
+- LoRA adapter Drive path → `outputs/lora/models/lora_final_model/`
+- Classifier Drive path → `outputs/classifier/v2/best_model/`
+- Output destination Drive path → `outputs/pipeline/pipeline_demo_v1/`
+
+Edit the path constants at the top of each notebook (`LORA_MODEL_PATH`, `CLASSIFIER_PATH`, `OUTPUT_DIR`) to point at local directories before running.
+
 ## Option B — Local installation
 
 ### Prerequisites
