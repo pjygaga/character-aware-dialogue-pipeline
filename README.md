@@ -23,7 +23,7 @@ Reusable utilities (data loading, prompt templates, classifier inference helpers
 
 ```bash
 # 1. Clone and enter
-git clone <repo-url>
+git clone https://github.com/pjygaga/character-aware-dialogue-pipeline
 cd character-aware-dialogue-pipeline
 
 # 2. Create a virtualenv (recommended)
@@ -49,8 +49,8 @@ For Colab / GPU / model-weight setup see [SETUP.md](SETUP.md).
 
 Videos will be added prior to final submission deadline.
 
-- **Demo video**: _to be added_
-- **Walkthrough video**: _to be added_
+- **Demo video**: https://drive.google.com/file/d/19fRyBtYyuYsqPCwGrsl-DeNdLEa0GLEw/view?usp=sharing
+- **Walkthrough video**:https://drive.google.com/file/d/1ouuWQ4KnpAMz82RwI45QGd4PrT5z1M5l/view?usp=sharing
 
 ## Evaluation
 
