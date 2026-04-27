@@ -83,9 +83,10 @@ Demo outputs: 16 PNG images covering the 6 emotion conditions are in `outputs/pi
 ├── notebooks/               # 4 Colab notebooks (stages 0–3)
 ├── src/                     # extracted utilities (data prep, baseline, classifier, pipeline)
 ├── data/                    # raw + extracted + processed datasets
+├── models/                  # trained model weights and configs (LoRA adapter, BERT classifier)
 ├── outputs/                 # CSVs, plots, classifier reports, demo PNGs
-├── docs/                    # annotation guidelines, iteration log
-└── archive/                 # iteration evidence (earlier prompt and LoRA versions)
+├── videos/                  # demo + technical walkthrough videos
+└── docs/                    # annotation guidelines, iteration log, archived iteration evidence
 ```
 
 ## License

@@ -17,11 +17,8 @@ env/
 *.bin
 *.safetensors
 *.ckpt
-**/best_model/
 **/checkpoints/
-**/lora_final_model/
-**/adapter_model/
-outputs/lora/models/
+models/*/
 outputs/classifier/v1/
 outputs/classifier/v2/
 outputs/classifier/dropout_*/

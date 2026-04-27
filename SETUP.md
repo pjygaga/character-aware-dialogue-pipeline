@@ -35,8 +35,8 @@ To use a different layout, edit the path constants near the top of each notebook
 
 **Local-vs-Colab path mapping.** When running notebooks locally instead of in Colab, replace the Drive paths above with their repository equivalents:
 
-- LoRA adapter Drive path → `outputs/lora/models/lora_final_model/`
-- Classifier Drive path → `outputs/classifier/v2/best_model/`
+- LoRA adapter Drive path → `models/hermione_lora_adapter/`
+- Classifier Drive path → `models/emotion_classifier_v2/`
 - Output destination Drive path → `outputs/pipeline/pipeline_demo_v1/`
 
 Edit the path constants at the top of each notebook (`LORA_MODEL_PATH`, `CLASSIFIER_PATH`, `OUTPUT_DIR`) to point at local directories before running.
@@ -86,8 +86,8 @@ The repository **does not** ship trained model weights (too large for git). To r
 
 | Artifact | Where to put it | How to obtain |
 |---|---|---|
-| LoRA adapter for Phi-2 | `outputs/lora/models/lora_final_model/` | Trained weights are not redistributed in this repository (data licensing + git LFS budget). To reproduce, run `notebooks/01_hermione_lora_training.ipynb` on a T4 GPU (≈90 minutes). |
-| Fine-tuned BERT classifier | `outputs/classifier/v2/best_model/` | Same constraint as above. To reproduce, run `notebooks/02_hermione_emotion_classifier.ipynb` (≈20 minutes on T4). |
+| LoRA adapter for Phi-2 | `models/hermione_lora_adapter/` | Trained weights are not redistributed in this repository (data licensing + git LFS budget). To reproduce, run `notebooks/01_hermione_lora_training.ipynb` on a T4 GPU (≈90 minutes). |
+| Fine-tuned BERT classifier | `models/emotion_classifier_v2/` | Same constraint as above. To reproduce, run `notebooks/02_hermione_emotion_classifier.ipynb` (≈20 minutes on T4). |
 | Stable Diffusion 1.5 base | auto-downloaded by `diffusers` | no manual step |
 
 To retrain from scratch, run the notebooks in order: 01 → 02. Stage 0 and 3 are inference-only.

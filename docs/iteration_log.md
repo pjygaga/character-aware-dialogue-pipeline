@@ -2,7 +2,7 @@
 
 This document records the design iterations behind each model in the pipeline. For each iteration we report what changed, why it changed, and what the measurable effect was. Maps to rubric items **#38** (iteration evidence) and **#95** (process documentation).
 
-The raw artifacts referenced below live in `archive/` (older code/data versions) and `outputs/` (training runs, plots, classification reports).
+The raw artifacts referenced below live in `docs/archive/` (older code/data versions), `models/` (final trained model weights), and `outputs/` (training runs, plots, classification reports).
 
 ---
 
@@ -35,7 +35,7 @@ Re-labeling the same 100-sample evaluation set with v2 guidelines reached **93/1
 
 ## 2. Classifier Iterations (Stage 4)
 
-> BERT emotion classifier (`bert-base-uncased`, 6 classes). Outputs: `outputs/classifier/`. Final model: `outputs/classifier/v2/best_model/`.
+> BERT emotion classifier (`bert-base-uncased`, 6 classes). Outputs: `outputs/classifier/`. Final model: `models/emotion_classifier_v2/`.
 
 ### Setup (shared across iterations)
 
@@ -109,7 +109,7 @@ The dropout=0.1 sweep run (F1=0.424) vs the v2 main run (F1=0.453, also dropout=
 
 ## 3. LoRA Training (Stage 3)
 
-> Phi-2 + LoRA fine-tuning on 537 Hermione movie lines. Outputs: `outputs/lora/`. Final model: `outputs/lora/models/lora_final_model/`.
+> Phi-2 + LoRA fine-tuning on 537 Hermione movie lines. Outputs: `outputs/lora/`. Final model: `models/hermione_lora_adapter/`.
 
 ### Phase 3.2 — Loss masking fix
 
@@ -159,7 +159,7 @@ Run B (lr=5e-4) achieved the lowest eval loss (3.1279) and was selected as the f
 
 ## 4. SD Prompt Engineering (Stage 5)
 
-> Stable Diffusion 1.5 image-prompt builder. Final version: `src/pipeline/image_prompts.py`. Code archive: `archive/prompt_iterations/image_prompts_v{1,2,3}.py` (v1 / v2 / v3 implementations preserved; v4 / v5 changes are described below but were not split into separate code files).
+> Stable Diffusion 1.5 image-prompt builder. Final version: `src/pipeline/image_prompts.py`. Code archive: `docs/archive/prompt_iterations/image_prompts_v{1,2,3}.py` (v1 / v2 / v3 implementations preserved; v4 / v5 changes are described below but were not split into separate code files).
 
 ### v1 → v5 iteration
 
@@ -211,6 +211,6 @@ B 的奇怪现象:30 个 response 全都有 "Honestly",25 个有 "I read",因为
 
 - Final annotation guidelines: `docs/annotation_guidelines.md`
 - AI tool usage and data sources: `ATTRIBUTION.md`
-- Archived iteration code: `archive/prompt_iterations/`, `archive/lora_iterations/`
+- Archived iteration code: `docs/archive/prompt_iterations/`, `docs/archive/lora_iterations/`
 - Per-class confusion matrices: `outputs/classifier/confusion_matrix_{v1,v2,dropout_*}.png`
 - Training curves: `outputs/classifier/classifier_training_curves.png`, `outputs/lora/training_loss_curves.png`
