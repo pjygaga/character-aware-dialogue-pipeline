@@ -40,7 +40,7 @@ Re-labeling the same 100-sample evaluation set with v2 guidelines reached **93/1
 ### Setup (shared across iterations)
 
 - Backbone: `bert-base-uncased` (Lecture 10 standard fine-tuning starting point; fits in T4 / RTX 4090 memory).
-- Splits: 80/10/10 stratified — train 478, val 58, test 64 (v1) → 578 / 72 / 80 (v2 after augmentation).
+- Splits: 80/10/10 stratified — train 478, val 58, test 64 (v1) → 578 / 58 / 64 (v2 after augmentation; only the train split grew, val and test were held constant for fair v1↔v2 comparison).
 - 6 emotion classes, severely imbalanced: neutral 184 vs sad 13 (~14×).
 - Loss: class-weighted cross-entropy, weights inversely proportional to class frequency (neutral 0.49, sad 6.02 in v1).
 - Hyperparameters: lr=2e-5, batch_size=16, weight_decay=0.01, warmup=10%, max 8 epochs. Early stopping on val macro F1, patience=2.
