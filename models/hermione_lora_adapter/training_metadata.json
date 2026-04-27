@@ -1,0 +1,64 @@
+{
+  "model_name": "microsoft/phi-2",
+  "method": "LoRA (PEFT)",
+  "lora_config": {
+    "r": 16,
+    "lora_alpha": 32,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "lora_dropout": 0.05
+  },
+  "training_config": {
+    "epochs": 3,
+    "batch_size": 8,
+    "gradient_accumulation_steps": 2,
+    "effective_batch_size": 16,
+    "learning_rate": 0.0005,
+    "warmup_steps": 10,
+    "max_grad_norm": 0.3,
+    "max_sequence_length": 128,
+    "precision": "fp16 + 4bit quantization (NF4)"
+  },
+  "data_config": {
+    "train_samples": 537,
+    "val_samples": 58,
+    "loss_masking": "Applied: only compute loss on response tokens"
+  },
+  "hyperparameter_search": {
+    "tested_learning_rates": [
+      0.0001,
+      0.0005,
+      0.001
+    ],
+    "selected_learning_rate": 0.0005,
+    "selection_criterion": "lowest validation loss",
+    "all_run_results": [
+      {
+        "run_name": "run_A_lr1e-4",
+        "learning_rate": 0.0001,
+        "final_train_loss": 3.2456,
+        "final_eval_loss": 3.1774
+      },
+      {
+        "run_name": "run_B_lr5e-4",
+        "learning_rate": 0.0005,
+        "final_train_loss": 3.0991,
+        "final_eval_loss": 3.1279
+      },
+      {
+        "run_name": "run_C_lr1e-3",
+        "learning_rate": 0.001,
+        "final_train_loss": 3.0192,
+        "final_eval_loss": 3.1604
+      }
+    ]
+  },
+  "final_model_metrics": {
+    "final_train_loss": 3.0991,
+    "final_eval_loss": 3.1279
+  },
+  "trainable_parameters": "5,242,880 (0.19% of total)",
+  "training_date": "2026-04-24T03:23:34.455924"
+}

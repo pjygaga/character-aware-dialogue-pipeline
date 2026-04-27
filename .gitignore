@@ -11,14 +11,22 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Model weights and training checkpoints (too large for GitHub)
+# Heavy weight files blocked by extension
 *.pt
 *.pth
 *.bin
 *.safetensors
 *.ckpt
 **/checkpoints/
-models/*/
+
+# Whitelist: ship the small LoRA adapter (~21 MB) directly in the repo
+!models/hermione_lora_adapter/adapter_model.safetensors
+
+# BERT classifier weights (~440 MB) stay blocked; users either retrain
+# (models/emotion_classifier_v2/train_classifier.py) or drop their own
+# checkpoint at models/emotion_classifier_v2/model.safetensors.
+
+# Training-run logs (keep the summary CSVs/PNGs in outputs/, skip raw logs)
 outputs/classifier/v1/
 outputs/classifier/v2/
 outputs/classifier/dropout_*/
