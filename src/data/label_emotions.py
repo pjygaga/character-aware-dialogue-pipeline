@@ -2,7 +2,7 @@
 Batch emotion labeling for Hermione dialogue lines using GPT-4o-mini.
 
 Input:  data/raw/hermione_lines_movies.json
-Output: data/processed/hermione_labeled.json
+Output: data/extracted/hermione_labeled.json
 """
 
 import os
@@ -28,7 +28,7 @@ VALID_LABELS = {"determined", "worried", "angry", "happy", "sad", "neutral"}
 
 # Paths
 INPUT_PATH = Path("data/raw/hermione_lines_movies.json")
-OUTPUT_PATH = Path("data/processed/hermione_labeled.json")
+OUTPUT_PATH = Path("data/extracted/hermione_labeled.json")
 OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)  # Create folder if needed
 
 

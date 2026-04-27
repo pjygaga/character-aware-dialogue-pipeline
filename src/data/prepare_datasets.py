@@ -8,7 +8,7 @@ random.seed(42)
 
 # Resolve paths relative to the repo root (this script lives in src/data/)
 REPO_ROOT = Path(__file__).resolve().parents[2]
-INPUT_PATH = REPO_ROOT / "data" / "extracted" / "hermione_labeled_v2.json"
+INPUT_PATH = REPO_ROOT / "data" / "extracted" / "hermione_labeled.json"
 OUTPUT_PATH = REPO_ROOT / "data" / "processed" / "hermione_dataset_lora.json"
 CLASSIFIER_OUTPUT_PATH = REPO_ROOT / "data" / "processed" / "hermione_dataset_classifier.json"
 TRAIN_PATH = REPO_ROOT / "data" / "processed" / "train.json"

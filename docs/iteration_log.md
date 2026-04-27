@@ -8,7 +8,7 @@ The raw artifacts referenced below live in `docs/archive/` (older code/data vers
 
 ## 1. Emotion Annotation (Stage 1)
 
-> Source artifacts: `docs/annotation_guidelines.md` (final guidelines), `data/processed/hermione_labeled_v2.json` (final labels). Earlier guidelines were reviewed and superseded.
+> Source artifacts: `docs/annotation_guidelines.md` (final guidelines), `data/extracted/hermione_labeled.json` (final labels). Earlier guidelines were reviewed and superseded.
 
 ### v1 baseline
 
@@ -29,7 +29,7 @@ Three changes for v2:
 
 ### Accuracy improvement
 
-Re-labeling the same 100-sample evaluation set with v2 guidelines reached **93/100 accuracy** (+6 points). The full 600-line corpus was then re-run under v2 and saved as `data/processed/hermione_labeled_v2.json`. This is the dataset all downstream stages depend on.
+Re-labeling the same 100-sample evaluation set with v2 guidelines reached **93/100 accuracy** (+6 points). The full 600-line corpus was then re-run under v2 and saved as `data/extracted/hermione_labeled.json`. This is the dataset all downstream stages depend on.
 
 ---
 
